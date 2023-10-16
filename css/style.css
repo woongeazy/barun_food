@@ -80,6 +80,9 @@ header {
 }
 
 /* section */
+section .carousel {
+    overflow: hidden;
+}
 section .carousel p {
     background: #666;
     width: 480px;
