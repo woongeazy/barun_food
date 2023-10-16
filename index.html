@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reaset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    
+
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -228,40 +228,46 @@
       </div>
     </main>
     <article>
-      <div class="cooperation">
-        <div>
-          <img src="" alt="" />
-          <p>협업 회사1</p>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <p>협업 회사2</p>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <p>협업 회사3</p>
-        </div>
+      <div class="container margin-auto">
+        <ul class="cooperation d-flex justify-between">
+          <li>
+            <img src="cooperation1" alt="협업 회사1" />
+          </li>
+          <li>
+            <img src="cooperation2" alt="협업 회사2" />
+          </li>
+          <li>
+            <img src="cooperation3" alt="협업 회사3" />
+          </li>
+        </ul>
       </div>
     </article>
     <footer>
-      <div class="footer_logo">
-        <img src="images/logo_footer.png" alt="footer logo" />
-      </div>
-      <div class="footer_top">
-        <ul>
-          <li>회사소개</li>
-          <li>이용약관</li>
-          <li>개인정보취급방침</li>
-          <li>사이트맵</li>
-        </ul>
-        <button>사업자정보확인</button>
-        <div class="family_site">
-          <select name="family" id="family_box" title="family">
-            <option value="몬가 몬가임">FAMILY-SITE</option>
-            <option value="몬가 몬가임">목우촌</option>
-            <option value="몬가 몬가임">파리바게트</option>
-            <option value="몬가 몬가임">궁전제과</option>
-          </select>
+      <div class="bg-b">
+        <div class="container margin-auto py-2">
+          <div class="footer_logo">
+            <img src="images/logo_footer.png" alt="footer logo" />
+          </div>
+          <div class="footer_top">
+            <div class="d-flex justify-between align-center">
+              <ul class="d-flex">
+                <li>회사소개</li>
+                <li>이용약관</li>
+                <li>개인정보취급방침</li>
+                <li>사이트맵</li>
+                <li><button>사업자정보확인</button></li>
+              </ul>
+              <div class="family_site">
+                <select name="family" id="family_box" title="family">
+                  <option value="몬가 몬가임">FAMILY-SITE</option>
+                  <option value="몬가 몬가임">목우촌</option>
+                  <option value="몬가 몬가임">파리바게트</option>
+                  <option value="몬가 몬가임">궁전제과</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <p class="copyright">Copyright&copy; 2017 Style Sanda All Rights Reseved.</p>
         </div>
       </div>
     </footer>
