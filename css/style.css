@@ -7,7 +7,7 @@ font-variation-settings:
 'opsz' 48
 }
 body {
-    font: 16px/1.5 "Noto Sans KR", "Nanum Gothic", sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     color: #000;
     background: #fff;
   }
@@ -40,10 +40,12 @@ header {
 }
 .sns_icon i {
     font-size: 2rem;
-    margin: 0 1rem;
 }
-.logo img {
-    width: 200px;
+.sns_icon li:nth-child(2) i {
+    font-size: 2.2rem;
+}
+.naver_icon {
+    width: 32px;
 }
 .login li:nth-child(1){
     border-right: 1px solid #666;
@@ -57,6 +59,7 @@ header {
 nav {
     margin: 2rem 0;
 }
+
 /* section */
 section .carousel p {
     background: #666;
