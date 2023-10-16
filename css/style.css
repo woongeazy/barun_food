@@ -6,6 +6,11 @@ font-variation-settings:
 'GRAD' 0,
 'opsz' 48
 }
+body {
+    font: 16px/1.5 "Noto Sans KR", "Nanum Gothic", sans-serif;
+    color: #000;
+    background: #fff;
+  }
 /* 공용 */
 .d-flex {
     display: flex;
