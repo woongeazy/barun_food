@@ -70,8 +70,9 @@ body {
 header {
     margin: 2rem 0;
 }
-.sns_icon i {
+.sns_icon li {
     font-size: 2rem;
+    margin: 0 .4rem;
 }
 .sns_icon li:nth-child(2) i {
     font-size: 2.2rem;
@@ -92,30 +93,50 @@ header {
     color: var(--font-color);
     font-weight: bold;
     font-size: 1.25rem;
-    width: 100%;
 }
 #gnb li:nth-child(1) {
     margin: 0 0 0 5rem;
 }
-#gnb li:nth-child(6) {
+#gnb li:nth-child(5) {
     margin: 0 5rem 0 0;
 }
-#gnb > li:hover {
+
+#gnb > li > a:hover {
     background: var(--fourd-color);
     color: var(--third-color);
 }
 
 /* section */
-
+#hero img {
+    width: 480px;
+    height: 642px;
+    flex: 1;
+    overflow: hidden;
+}
 section .carousel {
     overflow: hidden;
+    position: relative;
 }
 section .carousel p {
     background: #666;
     width: 480px;
     height: 642px;
 }
-
+.arrows {
+    position: absolute;
+    /* top: 367px; */
+    /* transform: translateY(100%); */
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+}
+.left_arr {
+    padding: 280px 1rem;
+}
+.right_arr {
+    padding: 280px 1rem;
+}
 /* main */
 main {
     margin: 2rem 0;
