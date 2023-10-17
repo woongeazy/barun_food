@@ -135,7 +135,7 @@ main {
     color: var(--font-color);
     padding: .7rem 2rem;
     border-radius: 30px;
-    width: 94px;
+    width: 130px;
     height: 40px;
     box-sizing: border-box;
     transition: all 300ms ease-in-out;
@@ -145,7 +145,7 @@ main {
 .main_nav li:hover {
     background: var(--fourd-color);
     color: var(--third-color);
-    width: 94px;
+    width: 130px;
     height: 39px;
     box-sizing: border-box;
     font-size: 1.25rem;
