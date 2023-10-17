@@ -106,6 +106,7 @@ header {
 }
 
 /* section */
+
 section .carousel {
     overflow: hidden;
 }
@@ -114,6 +115,7 @@ section .carousel p {
     width: 480px;
     height: 642px;
 }
+
 /* main */
 main {
     margin: 2rem 0;
