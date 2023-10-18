@@ -232,8 +232,8 @@ main {
     height: 200px;
     border-radius: 300px;
 }
-.brands li {
-
+.brands li:hover {
+    background: rgba(0, 0, 0, .5);
 }
 .brands li:nth-child(1) {
     margin: 0 0 0 8rem;

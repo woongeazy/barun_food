@@ -15,12 +15,16 @@ $(function(){
         dots: true
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
   $('#setitems').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: true,
+  });
+  $('#review').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
