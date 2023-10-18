@@ -127,8 +127,6 @@ header {
 #gnb > li:nth-child(5) {
     margin: 0 5rem 0 0;
 }
-#gnb > li > a:hover {
-}
 .sub {
     display: none;
     background: #24ff36;
