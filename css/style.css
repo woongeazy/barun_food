@@ -89,6 +89,9 @@ header {
     margin: 0 1rem 0 0;
 }
 /* nav */
+.sub {
+    display: none;
+}
 #gnb > li {
     color: var(--font-color);
     font-weight: bold;
@@ -110,11 +113,9 @@ header {
 #hero img {
     width: 480px;
     height: 642px;
-    flex: 1;
-    overflow: hidden;
 }
 section .carousel {
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 section .carousel p {
@@ -123,23 +124,30 @@ section .carousel p {
     height: 642px;
 }
 .arrows {
-    position: absolute;
     /* top: 367px; */
     /* transform: translateY(100%); */
-    z-index: 10;
     display: flex;
     justify-content: space-between;
     width: 1440px;
 }
 .left_arr {
-    padding: 280px 1rem;
+    position: absolute;
+    z-index: 10;
+    top: 200px;
+    padding: 279px 1rem;
+    transition: all 300ms ease-in-out;
 }
 .right_arr {
-    padding: 280px 1rem;
+    position: absolute;
+    z-index: 10;
+    top: 200px;
+    right: 250px;
+    padding: 279px 1rem;
+    transition: all 300ms ease-in-out;
 }
 /* main */
 main {
-    margin: 2rem 0;
+    margin: 6rem 0;
 }
 .main_title {
     text-align: center;
@@ -202,3 +210,8 @@ main {
 .copyright {
     color: #757575;
 }
+
+
+
+
+/*--------------------- brand ---------------------------*/

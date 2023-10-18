@@ -1,19 +1,55 @@
 $(function(){
   $('#hero').slick({
     slidesToShow: 3,
+    dots: true,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        dots: true
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+  $('#setitems').slick({
+    slidesToShow: 4,
+    dots: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        dots: true
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+  
+  $(".arrows").on("mouseover", function(){
+    $(".left_arr").css("background", "rgba(255, 255, 255, 0.5)");
+    $(".right_arr").css("background", "rgba(255, 255, 255, 0.5)");
   });
 
-  $("#hero").on("mouseover", function(e){
-    $(".left_arr").css("background", "rgba(255, 255, 255, 0.5)")
-    $(".right_arr").css("background", "rgba(255, 255, 255, 0.5)")
-    console.log("over");
-  });
-  $("#hero").on("mouseout", function(e){
-    console.log("asdf");
+  $(".arrows").on("mouseout", function(){
     $(".left_arr").css("background", "none")
     $(".right_arr").css("background", "none")
-  })
+  });
 })
