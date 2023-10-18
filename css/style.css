@@ -49,7 +49,6 @@ strong {
 }
 .bg-main {
     background: var(--primary-color);
-    padding: 2rem;
 }
 .bg-b {
     background: #333333;
@@ -107,43 +106,58 @@ header {
     margin: 0 1rem 0 0;
 }
 /* nav */
-.sub {
-    display: none;
-}
 #gnb > li {
     color: var(--font-color);
     font-weight: bold;
     font-size: 1.25rem;
+    text-align: center;
+    position: relative;
 }
-#gnb li:nth-child(1) {
-    margin: 0 0 0 5rem;
+#gnb > li > a {
+    display: inline-block;
+    padding: 27px 96px;
 }
-#gnb li:nth-child(5) {
-    margin: 0 5rem 0 0;
-}
-
 #gnb > li > a:hover {
-    background: var(--fourd-color);
+    background: var(--primary-color);
     color: var(--third-color);
 }
-
+#gnb > li:nth-child(1) {
+    margin: 0 0 0 5rem;
+}
+#gnb > li:nth-child(5) {
+    margin: 0 5rem 0 0;
+}
+#gnb > li > a:hover {
+}
+.sub {
+    display: none;
+    background: #24ff36;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    left: 0;
+    top: 100%;
+}
+.sub > li > a {
+    display: inline-block;
+    width: 100%;
+    padding: 1.25rem 0;
+}
+.sub > li > a:hover {
+    background: var(--primary-color);
+    color: var(--fourd-color);
+}
 /* section */
 #hero img {
     width: 480px;
     height: 642px;
 }
-section .carousel {
-    /* overflow: hidden; */
-    position: relative;
-}
-section .carousel p {
-    background: #666;
-    width: 480px;
-    height: 642px;
-}
-.arrows {
-    /* top: 367px; */
-    /* transform: translateY(100%); */
+
+
+/* .arrows {
+    top: 367px;
+    transform: translateY(100%);
     display: flex;
     justify-content: space-between;
     width: 1440px;
@@ -162,7 +176,9 @@ section .carousel p {
     right: 250px;
     padding: 279px 1rem;
     transition: all 300ms ease-in-out;
-}
+} */
+
+
 /* main */
 main {
     margin: 0 0 6rem 0;
