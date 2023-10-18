@@ -22,25 +22,10 @@ $(function(){
   });
   $('#setitems').slick({
     slidesToShow: 4,
-    dots: true,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
     arrows: true,
-    responsive: [
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-        dots: true
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
   });
   
   $(".arrows").on("mouseover", function(){

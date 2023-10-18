@@ -20,6 +20,9 @@ body {
     background: #fff;
   }
 /* 공용 */
+.pos-r {
+    position: relative;
+}
 .d-flex {
     display: flex;
 }
@@ -147,7 +150,7 @@ section .carousel p {
 }
 /* main */
 main {
-    margin: 6rem 0;
+    margin: 0 0 6rem 0;
 }
 .main_title {
     text-align: center;
@@ -215,3 +218,52 @@ main {
 
 
 /*--------------------- brand ---------------------------*/
+.brand-bg {
+    width: 100%;
+    height: 600px;
+    background: url(../images/brand-bg.jpg) no-repeat center scroll;
+}
+.brand-bg h1 {
+    color: var(--font-color);
+}
+/* section */
+.brands li {
+    width: 200px;
+    height: 200px;
+    border-radius: 300px;
+}
+.brands li {
+
+}
+.brands li:nth-child(1) {
+    margin: 0 0 0 8rem;
+}
+.brands li:nth-last-child(1) {
+    margin: 0 8rem 0 0;
+}
+.jubu img{
+    width: 1440px;
+}
+.jubu-text {
+    background: #1A78BC;
+    color: var(--font-color);
+    padding: 3rem;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    box-sizing: border-box;
+    bottom: -9rem;
+}
+.jubu-text h3 {
+    font-size: 2rem;
+    width: 200px;
+    border-right: 3px solid var(--font-color);
+    margin: 0 3rem 0 0;
+    padding: 3rem;
+}
+.jubu-text p {
+    width: 80%;
+}
+footer {
+    margin: 12rem 0 0 0;
+}
