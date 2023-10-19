@@ -33,9 +33,9 @@ $(function(){
   // });
 
   $("#gnb > li").on("mouseover", function(){
-    $(this).find(".sub").stop().slideDown();
+    $(this).find(".sub").stop().slideDown(300);
   })
   $("#gnb > li").on("mouseout", function(){
-    $(this).find(".sub").stop().slideUp();
+    $(this).find(".sub").stop().slideUp(300);
   })
 })
