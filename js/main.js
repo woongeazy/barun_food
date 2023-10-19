@@ -23,7 +23,6 @@ $(function(){
     $('#pig').addClass("d-none");
     $('#chicken').addClass("d-none");
     $('#cold').addClass("d-none");
-    console.log("click");
   });
   $('.tab-title li:nth-child(2)').on("click", function(){
     $('#setitems').addClass("d-none");
@@ -64,6 +63,31 @@ $(function(){
     $('#pig').addClass("d-none");
     $('#chicken').addClass("d-none");
     $('#cold').removeClass("d-none");
+  });
+
+  $('.brands > ul li:nth-child(4)').on("click", function(){
+    $('.brands > div:nth-last-child(1)').removeClass("d-none");
+    $('.brands > div:nth-last-child(2)').addClass("d-none");
+    $('.brands > div:nth-last-child(3)').addClass("d-none");
+    $('.brands > div:nth-last-child(4)').addClass("d-none");
+  });
+  $('.brands > ul li:nth-child(3)').on("click", function(){
+    $('.brands > div:nth-last-child(1)').addClass("d-none");
+    $('.brands > div:nth-last-child(2)').removeClass("d-none");
+    $('.brands > div:nth-last-child(3)').addClass("d-none");
+    $('.brands > div:nth-last-child(4)').addClass("d-none");
+  });
+  $('.brands > ul li:nth-child(2)').on("click", function(){
+    $('.brands > div:nth-last-child(1)').addClass("d-none");
+    $('.brands > div:nth-last-child(2)').addClass("d-none");
+    $('.brands > div:nth-last-child(3)').removeClass("d-none");
+    $('.brands > div:nth-last-child(4)').addClass("d-none");
+  });
+  $('.brands > ul li:nth-child(1)').on("click", function(){
+    $('.brands > div:nth-last-child(1)').addClass("d-none");
+    $('.brands > div:nth-last-child(2)').addClass("d-none");
+    $('.brands > div:nth-last-child(3)').addClass("d-none");
+    $('.brands > div:nth-last-child(4)').removeClass("d-none");
   });
 
 

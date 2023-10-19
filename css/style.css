@@ -204,13 +204,13 @@ main {
     margin: 2rem 18rem;
 }
 .main_nav li {
+    box-sizing: border-box;
     background: var(--primary-color);
     color: var(--font-color);
     padding: .7rem 2rem;
     border-radius: 30px;
     width: 130px;
     height: 40px;
-    box-sizing: border-box;
     transition: all 300ms;
     white-space: nowrap;
     text-align: center;
@@ -312,9 +312,9 @@ main {
     background: #1A78BC;
     color: var(--font-color);
     padding: 3rem;
-    width: 50%;
+    width: 60%;
     position: absolute;
-    left: 25%;
+    left: 20%;
     box-sizing: border-box;
     bottom: -9rem;
 }
@@ -327,4 +327,5 @@ main {
 }
 .jubu-text p {
     width: 80%;
+    line-height: 2;
 }
