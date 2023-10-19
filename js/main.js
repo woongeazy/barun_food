@@ -5,21 +5,69 @@ $(function(){
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
+    pauseOnFocus: true,
   });
-  $('#setitems').slick({
+
+  $('.carousel').slick({
     slidesToShow: 4,
-    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
     arrows: true,
+    pauseOnFocus: true,
   });
-  $('#review').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    arrows: true,
+
+  $('.tab-title li:nth-child(1)').on("click", function(){
+    $('#setitems').removeClass("d-none");
+    $('#meet').addClass("d-none");
+    $('#cow').addClass("d-none");
+    $('#pig').addClass("d-none");
+    $('#chicken').addClass("d-none");
+    $('#cold').addClass("d-none");
+    console.log("click");
   });
+  $('.tab-title li:nth-child(2)').on("click", function(){
+    $('#setitems').addClass("d-none");
+    $('#meet').removeClass("d-none");
+    $('#cow').addClass("d-none");
+    $('#pig').addClass("d-none");
+    $('#chicken').addClass("d-none");
+    $('#cold').addClass("d-none");
+  });
+  $('.tab-title li:nth-child(3)').on("click", function(){
+    $('#setitems').addClass("d-none");
+    $('#meet').addClass("d-none");
+    $('#cow').removeClass("d-none");
+    $('#pig').addClass("d-none");
+    $('#chicken').addClass("d-none");
+    $('#cold').addClass("d-none");
+  });
+  $('.tab-title li:nth-child(4)').on("click", function(){
+    $('#setitems').addClass("d-none");
+    $('#meet').addClass("d-none");
+    $('#cow').addClass("d-none");
+    $('#pig').removeClass("d-none");
+    $('#chicken').addClass("d-none");
+    $('#cold').addClass("d-none");
+  });
+  $('.tab-title li:nth-child(5)').on("click", function(){
+    $('#setitems').addClass("d-none");
+    $('#meet').addClass("d-none");
+    $('#cow').addClass("d-none");
+    $('#pig').addClass("d-none");
+    $('#chicken').removeClass("d-none");
+    $('#cold').addClass("d-none");
+  });
+  $('.tab-title li:nth-child(6)').on("click", function(){
+    $('#setitems').addClass("d-none");
+    $('#meet').addClass("d-none");
+    $('#cow').addClass("d-none");
+    $('#pig').addClass("d-none");
+    $('#chicken').addClass("d-none");
+    $('#cold').removeClass("d-none");
+  });
+
+
+  
  
   //화살표 애니메이션
   // $(".arrows").on("mouseover", function(){
@@ -33,9 +81,9 @@ $(function(){
   // });
 
   $("#gnb > li").on("mouseover", function(){
-    $(this).find(".sub").stop().slideDown(300);
+    $(this).find(".sub").stop().slideDown(250);
   })
   $("#gnb > li").on("mouseout", function(){
-    $(this).find(".sub").stop().slideUp(300);
+    $(this).find(".sub").stop().slideUp(250);
   })
 })

@@ -78,9 +78,15 @@
             <li><a href="#">로그인</a></li>
             <li><a href="#">회원가입</a></li>
             <li>
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <!-- <i class="fa-solid fa-magnifying-glass"></i>  검색아이콘-->  
             </li>
           </ul>
+          <form>
+            <fieldset>
+              <legend></legend>
+              <input type="submit" placeholder="검색어를 입력하세요">
+            </fieldset>
+          </form>
         </div>
       </div>
     </header>
@@ -108,7 +114,7 @@
               </ul>
             </li>
             <li>
-              <a href="brand.html">가맹점</a>
+              <a href="brand.html">브랜드</a>
               <ul class="sub">
                 <li><a href="#">주부 9단</a></li>
                 <li><a href="#">프라임</a></li>
@@ -142,7 +148,7 @@
           <img src="images/left.png" class="left_arr" alt="left" />
           <img src="images/right.png" class="right_arr" alt="right" />
         </div> -->
-        <div id="hero" class="carousel d-flex">
+        <div id="hero" class="d-flex">
           <div><img src="images/carousel1.jpg" alt="캐러셀1" /></div>
           <div><img src="images/carousel2.jpg" alt="캐러셀2" /></div>
           <div><img src="images/carousel3.jpg" alt="캐러셀3" /></div>
@@ -156,7 +162,7 @@
       <div class="container margin-auto">
         <h1 class="main_title">오직 바른푸드에서만</h1>
         <div class="main_nav">
-          <ul class="d-flex justify-between">
+          <ul class="tab-title d-flex justify-between">
             <li>세트</li>
             <li>육가공품</li>
             <li>우육</li>
@@ -164,15 +170,43 @@
             <li>계육</li>
             <li>냉동</li>
           </ul>
-          <div id="setitems" class="carousel">
-            <img src="images/set1.jpg" alt="메인 케러셀1" />
-            <img src="images/set2.jpg" alt="메인 케러셀2" />
-            <img src="images/set3.jpg" alt="메인 케러셀3" />
-            <img src="images/set4.jpg" alt="메인 케러셀4" />
-            <img src="images/set1.jpg" alt="메인 케러셀1" />
-            <img src="images/set2.jpg" alt="메인 케러셀2" />
-            <img src="images/set3.jpg" alt="메인 케러셀3" />
-            <img src="images/set4.jpg" alt="메인 케러셀4" />
+          <div class="tab-contents">
+            <div id="setitems">
+              <img src="images/set1.jpg" alt="세트 상품1" />
+              <img src="images/set2.jpg" alt="세트 상품2" />
+              <img src="images/set3.jpg" alt="세트 상품3" />
+              <img src="images/set4.jpg" alt="세트 상품4" />
+            </div>
+            <div id="meet" class="d-none">
+              <img src="images/meet1.jpg" alt="가공품 상품1" />
+              <img src="images/meet2.jpg" alt="가공품 상품2" />
+              <img src="images/meet3.jpg" alt="가공품 상품3" />
+              <img src="images/meet4.jpg" alt="가공품 상품4" />
+            </div>
+            <div id="cow" class="d-none">
+              <img src="images/meet2.jpg" alt="가공품 상품1" />
+              <img src="images/meet2.jpg" alt="가공품 상품2" />
+              <img src="images/meet2.jpg" alt="가공품 상품3" />
+              <img src="images/meet2.jpg" alt="가공품 상품4" />
+            </div>
+            <div id="pig" class="d-none">
+              <img src="images/meet4.jpg" alt="가공품 상품1" />
+              <img src="images/meet4.jpg" alt="가공품 상품2" />
+              <img src="images/meet3.jpg" alt="가공품 상품3" />
+              <img src="images/meet3.jpg" alt="가공품 상품4" />
+            </div>
+            <div id="chicken" class="d-none">
+              <img src="images/meet3.jpg" alt="가공품 상품1" />
+              <img src="images/meet3.jpg" alt="가공품 상품2" />
+              <img src="images/meet3.jpg" alt="가공품 상품3" />
+              <img src="images/meet3.jpg" alt="가공품 상품4" />
+            </div>
+            <div id="cold" class="d-none">
+              <img src="images/meet4.jpg" alt="가공품 상품1" />
+              <img src="images/meet4.jpg" alt="가공품 상품2" />
+              <img src="images/meet4.jpg" alt="가공품 상품3" />
+              <img src="images/meet4.jpg" alt="가공품 상품4" />
+            </div>
           </div>
         </div>
       </div>
@@ -180,11 +214,11 @@
         <div class="container margin-auto">
           <h1 class="main_title">리뷰</h1>
           <div class="main_nav">
-            <ul class="d-flex justify-between">
+            <ul class="d-flex justify-center gap-2">
               <li>사진</li>
               <li>동영상</li>
             </ul>
-            <div id="review">
+            <div id="review" class="carousel">
               <img src="images/set1.jpg" alt="메인 케러셀1" />
               <img src="images/set2.jpg" alt="메인 케러셀2" />
               <img src="images/set3.jpg" alt="메인 케러셀3" />
