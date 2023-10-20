@@ -90,6 +90,15 @@ $(function(){
     $('.brands > div:nth-last-child(4)').removeClass("d-none");
   });
 
+  $('.news_qna_title > h2:nth-child(1)').on('click', function(){
+    $('.news').removeClass("d-none");
+    $('.qna').addClass("d-none");
+  })
+  $('.news_qna_title > h2:nth-child(2)').on('click', function(){
+    $('.qna').removeClass("d-none");
+    $('.news').addClass("d-none");
+  })
+
 
   
  
