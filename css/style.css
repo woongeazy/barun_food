@@ -95,6 +95,11 @@ strong {
 .mt-12 {
     margin: 12rem 0 0 0;
 }
+.bg-g {
+    background: var(--third-color) url(../images/dot.png);
+    max-width: 100%;
+    height: 352px;
+}
 /* header */
 header {
     margin: 2rem 0;
@@ -225,9 +230,40 @@ main {
     white-space: nowrap;
     text-align: center;
 }
+.app_text {
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+    font-size: 2rem;
+    color: var(--font-color);
+}
+.app_text button {
+    background: var(--primary-color);
+    border: none;
+    border-radius: 300px;
+    padding: .5rem 2rem;
+    color: var(--font-color);
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem 0 0 0;
+}
+.box_radius {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 100%;
+    right: 0;
+    top: -60px;
+}
+.box_radius img {
+    position: absolute;
+    right: -150px;
+}
 /* .main_nav ul li:nth-child(2) {
     padding: 0 18px;
 } */
+
 .tab-contents {
     text-align: center;
 }
@@ -277,7 +313,7 @@ main {
 
 /*--------------------- brand ---------------------------*/
 .brand-bg {
-    width: 100%;
+    max-width: 100%;
     height: 350px;
     background: url(../images/brand-bg.jpg) no-repeat center scroll;
 }
