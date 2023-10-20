@@ -1,5 +1,5 @@
-$(function(){
-  $('#hero').slick({
+$(function () {
+  $("#hero").slick({
     slidesToShow: 3,
     dots: true,
     slidesToScroll: 1,
@@ -8,7 +8,7 @@ $(function(){
     pauseOnFocus: true,
   });
 
-  $('.carousel').slick({
+  $(".carousel").slick({
     slidesToShow: 4,
     autoplay: true,
     autoplaySpeed: 4000,
@@ -16,92 +16,65 @@ $(function(){
     pauseOnFocus: true,
   });
 
-  $('.tab-title li:nth-child(1)').on("click", function(){
-    $('#setitems').removeClass("d-none");
-    $('#meet').addClass("d-none");
-    $('#cow').addClass("d-none");
-    $('#pig').addClass("d-none");
-    $('#chicken').addClass("d-none");
-    $('#cold').addClass("d-none");
+  $(".tab-title li:nth-child(1)").on("click", function () {
+    $("#setitems").removeClass("d-none");
+    $("#meet").addClass("d-none");
+    $("#fresh").addClass("d-none");
+    $("#cool").addClass("d-none");
   });
-  $('.tab-title li:nth-child(2)').on("click", function(){
-    $('#setitems').addClass("d-none");
-    $('#meet').removeClass("d-none");
-    $('#cow').addClass("d-none");
-    $('#pig').addClass("d-none");
-    $('#chicken').addClass("d-none");
-    $('#cold').addClass("d-none");
+  $(".tab-title li:nth-child(2)").on("click", function () {
+    $("#setitems").addClass("d-none");
+    $("#meet").removeClass("d-none");
+    $("#fresh").addClass("d-none");
+    $("#cool").addClass("d-none");
   });
-  $('.tab-title li:nth-child(3)').on("click", function(){
-    $('#setitems').addClass("d-none");
-    $('#meet').addClass("d-none");
-    $('#cow').removeClass("d-none");
-    $('#pig').addClass("d-none");
-    $('#chicken').addClass("d-none");
-    $('#cold').addClass("d-none");
+  $(".tab-title li:nth-child(3)").on("click", function () {
+    $("#setitems").addClass("d-none");
+    $("#meet").addClass("d-none");
+    $("#fresh").removeClass("d-none");
+    $("#cool").addClass("d-none");
   });
-  $('.tab-title li:nth-child(4)').on("click", function(){
-    $('#setitems').addClass("d-none");
-    $('#meet').addClass("d-none");
-    $('#cow').addClass("d-none");
-    $('#pig').removeClass("d-none");
-    $('#chicken').addClass("d-none");
-    $('#cold').addClass("d-none");
-  });
-  $('.tab-title li:nth-child(5)').on("click", function(){
-    $('#setitems').addClass("d-none");
-    $('#meet').addClass("d-none");
-    $('#cow').addClass("d-none");
-    $('#pig').addClass("d-none");
-    $('#chicken').removeClass("d-none");
-    $('#cold').addClass("d-none");
-  });
-  $('.tab-title li:nth-child(6)').on("click", function(){
-    $('#setitems').addClass("d-none");
-    $('#meet').addClass("d-none");
-    $('#cow').addClass("d-none");
-    $('#pig').addClass("d-none");
-    $('#chicken').addClass("d-none");
-    $('#cold').removeClass("d-none");
+  $(".tab-title li:nth-child(4)").on("click", function () {
+    $("#setitems").addClass("d-none");
+    $("#meet").addClass("d-none");
+    $("#fresh").addClass("d-none");
+    $("#cool").removeClass("d-none");
   });
 
-  $('.brands > ul li:nth-child(4)').on("click", function(){
-    $('.brands > div:nth-last-child(1)').removeClass("d-none");
-    $('.brands > div:nth-last-child(2)').addClass("d-none");
-    $('.brands > div:nth-last-child(3)').addClass("d-none");
-    $('.brands > div:nth-last-child(4)').addClass("d-none");
+  $(".brands > ul li:nth-child(4)").on("click", function () {
+    $(".brands > div:nth-last-child(1)").removeClass("d-none");
+    $(".brands > div:nth-last-child(2)").addClass("d-none");
+    $(".brands > div:nth-last-child(3)").addClass("d-none");
+    $(".brands > div:nth-last-child(4)").addClass("d-none");
   });
-  $('.brands > ul li:nth-child(3)').on("click", function(){
-    $('.brands > div:nth-last-child(1)').addClass("d-none");
-    $('.brands > div:nth-last-child(2)').removeClass("d-none");
-    $('.brands > div:nth-last-child(3)').addClass("d-none");
-    $('.brands > div:nth-last-child(4)').addClass("d-none");
+  $(".brands > ul li:nth-child(3)").on("click", function () {
+    $(".brands > div:nth-last-child(1)").addClass("d-none");
+    $(".brands > div:nth-last-child(2)").removeClass("d-none");
+    $(".brands > div:nth-last-child(3)").addClass("d-none");
+    $(".brands > div:nth-last-child(4)").addClass("d-none");
   });
-  $('.brands > ul li:nth-child(2)').on("click", function(){
-    $('.brands > div:nth-last-child(1)').addClass("d-none");
-    $('.brands > div:nth-last-child(2)').addClass("d-none");
-    $('.brands > div:nth-last-child(3)').removeClass("d-none");
-    $('.brands > div:nth-last-child(4)').addClass("d-none");
+  $(".brands > ul li:nth-child(2)").on("click", function () {
+    $(".brands > div:nth-last-child(1)").addClass("d-none");
+    $(".brands > div:nth-last-child(2)").addClass("d-none");
+    $(".brands > div:nth-last-child(3)").removeClass("d-none");
+    $(".brands > div:nth-last-child(4)").addClass("d-none");
   });
-  $('.brands > ul li:nth-child(1)').on("click", function(){
-    $('.brands > div:nth-last-child(1)').addClass("d-none");
-    $('.brands > div:nth-last-child(2)').addClass("d-none");
-    $('.brands > div:nth-last-child(3)').addClass("d-none");
-    $('.brands > div:nth-last-child(4)').removeClass("d-none");
+  $(".brands > ul li:nth-child(1)").on("click", function () {
+    $(".brands > div:nth-last-child(1)").addClass("d-none");
+    $(".brands > div:nth-last-child(2)").addClass("d-none");
+    $(".brands > div:nth-last-child(3)").addClass("d-none");
+    $(".brands > div:nth-last-child(4)").removeClass("d-none");
   });
 
-  $('.news_qna_title > h2:nth-child(1)').on('click', function(){
-    $('.news').removeClass("d-none");
-    $('.qna').addClass("d-none");
-  })
-  $('.news_qna_title > h2:nth-child(2)').on('click', function(){
-    $('.qna').removeClass("d-none");
-    $('.news').addClass("d-none");
-  })
+  $(".news_qna_title > h2:nth-child(1)").on("click", function () {
+    $(".news").removeClass("d-none");
+    $(".qna").addClass("d-none");
+  });
+  $(".news_qna_title > h2:nth-child(2)").on("click", function () {
+    $(".qna").removeClass("d-none");
+    $(".news").addClass("d-none");
+  });
 
-
-  
- 
   //화살표 애니메이션
   // $(".arrows").on("mouseover", function(){
   //   $(".left_arr").css("background", "rgba(255, 255, 255, 0.5)");
@@ -113,10 +86,10 @@ $(function(){
   //   $(".right_arr").css("background", "none")
   // });
 
-  $("#gnb > li").on("mouseover", function(){
+  $("#gnb > li").on("mouseover", function () {
     $(this).find(".sub").stop().slideDown(250);
-  })
-  $("#gnb > li").on("mouseout", function(){
+  });
+  $("#gnb > li").on("mouseout", function () {
     $(this).find(".sub").stop().slideUp(250);
-  })
-})
+  });
+});

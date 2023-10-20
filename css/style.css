@@ -224,6 +224,14 @@ main {
   white-space: nowrap;
   text-align: center;
 }
+
+.tab-contents img {
+    width: 300px;
+    height: 410px;
+    flex: 0 0 1;
+    overflow: hidden;
+}
+
 .app_text {
   position: absolute;
   top: 4rem;
