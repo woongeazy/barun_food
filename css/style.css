@@ -199,9 +199,8 @@ main {
     font-weight: bold;
     color: #333;
 }
-
 .main_nav ul {
-    margin: 2rem 18rem;
+    margin: 3rem 0 ;
 }
 .main_nav li {
     box-sizing: border-box;
