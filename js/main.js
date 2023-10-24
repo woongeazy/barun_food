@@ -37,28 +37,28 @@ $(function () {
     $(".brands > div:nth-last-child(2)").addClass("d-none");
     $(".brands > div:nth-last-child(3)").addClass("d-none");
     $(".brands > div:nth-last-child(4)").addClass("d-none");
-    $(".jubu_infos").addClass("d-none");
+    $(".jubu_infos").stop().slideUp(300);
   });
   $(".brands > ul li:nth-child(3)").on("click", function () {
     $(".brands > div:nth-last-child(1)").addClass("d-none");
     $(".brands > div:nth-last-child(2)").removeClass("d-none");
     $(".brands > div:nth-last-child(3)").addClass("d-none");
     $(".brands > div:nth-last-child(4)").addClass("d-none");
-    $(".jubu_infos").addClass("d-none");
+    $(".jubu_infos").stop().slideUp(300);
   });
   $(".brands > ul li:nth-child(2)").on("click", function () {
     $(".brands > div:nth-last-child(1)").addClass("d-none");
     $(".brands > div:nth-last-child(2)").addClass("d-none");
     $(".brands > div:nth-last-child(3)").removeClass("d-none");
     $(".brands > div:nth-last-child(4)").addClass("d-none");
-    $(".jubu_infos").addClass("d-none");
+    $(".jubu_infos").stop().slideUp(300);
   });
   $(".brands > ul li:nth-child(1)").on("click", function () {
     $(".brands > div:nth-last-child(1)").addClass("d-none");
     $(".brands > div:nth-last-child(2)").addClass("d-none");
     $(".brands > div:nth-last-child(3)").addClass("d-none");
     $(".brands > div:nth-last-child(4)").removeClass("d-none");
-    $(".jubu_infos").addClass("d-none");
+    $(".jubu_infos").stop().slideUp(300);
   });
 
   $(".news_qna_title > h2:nth-child(1)").on("click", function () {
