@@ -7,11 +7,13 @@ $(function () {
     autoplaySpeed: 3000,
     pauseOnFocus: true,
   });
-
-  $('.login button').on("mouseover", function(){
-    console.log("over");
+  
+  $('body').on("click", function(){
+    $('form').css("display", "none")
+  });
+  $('.fa-solid').on("click", function(){
     $('form').css("display", "block")
-  })
+  });
 
   $(".tab-title li:nth-child(1)").on("click", function () {
     $("#setitems").removeClass("d-none");
