@@ -4,18 +4,9 @@ $(function () {
     dots: true,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     pauseOnFocus: true,
   });
-
-  $(".carousel").slick({
-    slidesToShow: 4,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    arrows: true,
-    pauseOnFocus: true,
-  });
-
   $(".tab-title li:nth-child(1)").on("click", function () {
     $("#setitems").removeClass("d-none");
     $("#meet").addClass("d-none");
@@ -46,24 +37,28 @@ $(function () {
     $(".brands > div:nth-last-child(2)").addClass("d-none");
     $(".brands > div:nth-last-child(3)").addClass("d-none");
     $(".brands > div:nth-last-child(4)").addClass("d-none");
+    $(".jubu_infos").addClass("d-none");
   });
   $(".brands > ul li:nth-child(3)").on("click", function () {
     $(".brands > div:nth-last-child(1)").addClass("d-none");
     $(".brands > div:nth-last-child(2)").removeClass("d-none");
     $(".brands > div:nth-last-child(3)").addClass("d-none");
     $(".brands > div:nth-last-child(4)").addClass("d-none");
+    $(".jubu_infos").addClass("d-none");
   });
   $(".brands > ul li:nth-child(2)").on("click", function () {
     $(".brands > div:nth-last-child(1)").addClass("d-none");
     $(".brands > div:nth-last-child(2)").addClass("d-none");
     $(".brands > div:nth-last-child(3)").removeClass("d-none");
     $(".brands > div:nth-last-child(4)").addClass("d-none");
+    $(".jubu_infos").addClass("d-none");
   });
   $(".brands > ul li:nth-child(1)").on("click", function () {
     $(".brands > div:nth-last-child(1)").addClass("d-none");
     $(".brands > div:nth-last-child(2)").addClass("d-none");
     $(".brands > div:nth-last-child(3)").addClass("d-none");
     $(".brands > div:nth-last-child(4)").removeClass("d-none");
+    $(".jubu_infos").addClass("d-none");
   });
 
   $(".news_qna_title > h2:nth-child(1)").on("click", function () {
@@ -91,5 +86,12 @@ $(function () {
   });
   $("#gnb > li").on("mouseout", function () {
     $(this).find(".sub").stop().slideUp(250);
+  });
+
+  $(".jubu-text button").on("click", function () {
+    $(".jubu_infos").stop().slideDown(300);
+  });
+  $(".jubu_info > p").on("click", function () {
+    $(".jubu_infos").stop().slideUp(300);
   });
 });
