@@ -321,20 +321,16 @@ form {
   border: 1px solid #333;
   border-radius: 20px;
 }
-.community_title {
-}
 .community_title h2 {
-  border-bottom: 1px solid #333;
   padding: 0.5rem 1rem;
   font-size: 2rem;
   color: #333;
-  border-right : 1px solid #333;
 }
-.community_title h2:nth-child(4) {
-  border-right : none;
+.community_title h2:nth-child(1) {
+  background: var(--fourd-color);
 }
-.community_on {
-  border-bottom : none;
+.community_title h2:nth-child(1) {
+  border-radius: 20px 0 0 0;
 }
 .community_contents {
   padding: 1rem 3rem;

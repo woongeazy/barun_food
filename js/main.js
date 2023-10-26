@@ -73,18 +73,32 @@ $(function () {
     $(".news").removeClass("d-none");
     $(".event").addClass("d-none");
     $(".qna").addClass("d-none");
+    $(".gamaeng").addClass("d-none");
   });
   $(".community_title > h2:nth-child(2)").on("click", function () {
     $(".news").addClass("d-none");
     $(".event").removeClass("d-none");
     $(".qna").addClass("d-none");
+    $(".gamaeng").addClass("d-none");
 
   });
   $(".community_title > h2:nth-child(3)").on("click", function () {
     $(".news").addClass("d-none");
     $(".event").addClass("d-none");
     $(".qna").removeClass("d-none");
+    $(".gamaeng").addClass("d-none");
   });
+  $(".community_title > h2:nth-child(4)").on("click", function () {
+    $(".news").addClass("d-none");
+    $(".event").addClass("d-none");
+    $(".qna").addClass("d-none");
+    $(".gamaeng").removeClass("d-none");
+  });
+
+  $('.community_title h2').on("mouseover", function(){
+    console.log("over");
+    (this).find('h2').css("backguround", "#333333")
+  })
 
   //화살표 애니메이션
   // $(".arrows").on("mouseover", function(){
