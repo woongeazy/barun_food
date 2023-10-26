@@ -69,13 +69,21 @@ $(function () {
     $(".jubu_infos").stop().slideUp(300);
   });
 
-  $(".news_qna_title > h2:nth-child(1)").on("click", function () {
+  $(".community_title > h2:nth-child(1)").on("click", function () {
     $(".news").removeClass("d-none");
+    $(".event").addClass("d-none");
     $(".qna").addClass("d-none");
   });
-  $(".news_qna_title > h2:nth-child(2)").on("click", function () {
-    $(".qna").removeClass("d-none");
+  $(".community_title > h2:nth-child(2)").on("click", function () {
     $(".news").addClass("d-none");
+    $(".event").removeClass("d-none");
+    $(".qna").addClass("d-none");
+
+  });
+  $(".community_title > h2:nth-child(3)").on("click", function () {
+    $(".news").addClass("d-none");
+    $(".event").addClass("d-none");
+    $(".qna").removeClass("d-none");
   });
 
   //화살표 애니메이션

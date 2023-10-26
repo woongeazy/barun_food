@@ -6,6 +6,7 @@
   --fourd-color: #d6dd2b;
   --bg-orange: orange;
   --font-color: #fff;
+  --subfont-color: #7c7c7c;
 }
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
@@ -316,63 +317,50 @@ form {
 }
 
 /* 하단 탭 */
-.enent_title h2 {
-  display: inline-block;
-  background: var(--primary-color);
+.community_continer {
+  border: 1px solid #333;
+  border-radius: 20px;
+}
+.community_title {
+}
+.community_title h2 {
+  border-bottom: 1px solid #333;
   padding: 0.5rem 1rem;
   font-size: 2rem;
-  color: var(--font-color);
-  border-radius: 10px 10px 0 0;
+  color: #333;
+  border-right : 1px solid #333;
 }
-.enent_contents {
-  background: var(--fourd-color);
+.community_title h2:nth-child(4) {
+  border-right : none;
+}
+.community_on {
+  border-bottom : none;
+}
+.community_contents {
   padding: 1rem 3rem;
-  border-radius: 0 30px 30px 30px;
-  width: 500px;
+  width: 700px;
+  box-sizing: border-box;
 }
-.enent_contents p {
+.community_contents p {
   padding: 1rem 1rem;
   font-size: 1.25rem;
 }
-.enent_contents li {
-  border-bottom: 1px solid #929292;
+.community_contents p:nth-child(2) {
+  font-size: 1.125rem;
+  color: var(--subfont-color);
 }
-.enent_contents li:nth-child(1) {
-  border-top: 3px solid #000;
+.community_contents li {
+  border-bottom: 2px dotted #929292;
 }
-.enent_contents li:nth-last-child(1) {
-  border-bottom: 3px solid #000;
+.new {
+  width: 700px;
+  box-sizing: border-box;
 }
-
-/* 하단 탭 2 */
-.news_qna_title h2 {
-  display: inline-block;
-  background: var(--primary-color);
+.new h2 {
   padding: 0.5rem 1rem;
   font-size: 2rem;
-  color: var(--font-color);
-  border-radius: 10px 10px 0 0;
+  color: #333;
 }
-.news_qna_contents {
-  background: var(--fourd-color);
-  padding: 1rem 3rem;
-  border-radius: 0 30px 30px 30px;
-  width: 500px;
-}
-.news_qna_contents p {
-  padding: 1rem 1rem;
-  font-size: 1.25rem;
-}
-.news_qna_contents li {
-  border-bottom: 1px solid #929292;
-}
-.news_qna_contents li:nth-child(1) {
-  border-top: 3px solid #000;
-}
-.news_qna_contents li:nth-last-child(1) {
-  border-bottom: 3px solid #000;
-}
-
 /* article */
 .cooperation li {
   background: #b6b6b6;
