@@ -8,9 +8,9 @@ $(function () {
     pauseOnFocus: true,
   });
   
-  $('body').on("click", function(){
-    $('form').css("display", "none")
-  });
+  // $('body').on("click", function(){
+  //   $('form').css("display", "none")
+  // });
   $('.fa-solid').on("click", function(){
     $('form').css("display", "block")
   });
