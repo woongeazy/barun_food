@@ -112,10 +112,12 @@ $(function () {
   // });
 
   $("#gnb > li").on("mouseover", function () {
-    $(this).find(".sub").stop().slideDown(250);
+    $(".sub").stop().slideDown(250);
+    $('.bg-main').addClass("on");
   });
   $("#gnb > li").on("mouseout", function () {
-    $(this).find(".sub").stop().slideUp(250);
+    $(".sub").stop().slideUp(250);
+    $('.bg-main').removeClass("on");
   });
 
   $(".jubu-text button").on("click", function () {

@@ -6,6 +6,7 @@
   --fourd-color: #d6dd2b;
   --bg-orange: orange;
   --font-color: #fff;
+  --lightfont-color: #333;
   --subfont-color: #7c7c7c;
 }
 .material-symbols-outlined {
@@ -47,15 +48,13 @@ strong {
 .text-center {
   text-align: center;
 }
-.bg-main {
-  background: var(--primary-color);
-}
+
 .overflow-hidden {
   overflow: hidden;
   height: 0;
 }
 .bg-b {
-  background: #333333;
+  background: var(--lightfont-color);
 }
 .d-none {
   display: none;
@@ -173,7 +172,6 @@ form {
 }
 .sub {
   display: none;
-  background: var(--font-color);
   color: #333;
   box-sizing: border-box;
   position: absolute;
@@ -191,6 +189,26 @@ form {
   background: var(--primary-color);
   color: var(--font-color);
 }
+
+.bg-main {
+  background: var(--primary-color);
+  position: relative;
+}
+.bg-main::after {
+  content: '';
+  width: 100%;
+  height: 0;
+  background: var(--font-color);
+  position: absolute;
+  left: 0;
+  top: 100;
+  z-index: 10;
+  transition: all 300ms;
+}
+.bg-main.on::after {
+  height: 240px;
+}
+
 /* section */
 #hero img {
   width: 480px;
