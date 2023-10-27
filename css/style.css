@@ -141,9 +141,7 @@ header {
   margin: 0 1rem 0 0;
 }
 
-form {
-  display: none;
-}
+
 .fa-solid {
   font-size: 1.5rem;
   padding: 0 0 0 .5rem;
@@ -175,7 +173,7 @@ form {
   color: #333;
   box-sizing: border-box;
   position: absolute;
-  z-index: 1000;
+  z-index: 20;
   width: 100%;
   left: 0;
   top: 100%;
@@ -207,6 +205,37 @@ form {
 }
 .bg-main.on::after {
   height: 240px;
+}
+.bg-main2::after {
+  content: '';
+  width: 100%;
+  height: 0;
+  background: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 70px;
+  z-index: 30;
+  transition: all 300ms;
+}
+.bg-main2.on::after {
+  height: 200px;
+}
+
+form {
+  display: none;
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 190px;
+  z-index: 100;
+}
+input {
+  font-size: 1.2rem;
+  padding: 0 0 0 1rem;
+  width: 90%;
+  height: 50px;
+  border-radius: 100px;
 }
 
 /* section */
@@ -339,16 +368,41 @@ form {
   border: 1px solid #333;
   border-radius: 20px;
 }
-.community_title h2 {
-  padding: 0.5rem 1rem;
-  font-size: 2rem;
-  color: #333;
+.community_title {
+  border-bottom: 1px solid var(--lightfont-color);
 }
-.community_title h2:nth-child(1) {
-  background: var(--fourd-color);
+.community_title h2 {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-left: 1px solid var(--lightfont-color);
+  color: #333;
+  background:#cecece;
+  position: relative;
+}
+.community_title .sec {
+  background: var(--font-color);
 }
 .community_title h2:nth-child(1) {
   border-radius: 20px 0 0 0;
+  border-left: none;
+}
+.community_title h2:nth-last-child(1) {
+  border-radius: 0 20px 0 0;
+}
+.community_title .on::after {
+  content: '';
+  width: 100%;
+  height: 10px;
+  border-bottom: 1px solid #fff;
+  background: var(--font-color);
+  position: absolute;
+  left: 0;
+  top: 90%;
+  z-index: 10;
+}
+.community_title h2:hover {
+  background:var(--font-color);
+  transition: all 300ms;
 }
 .community_contents {
   padding: 1rem 3rem;
@@ -377,10 +431,8 @@ form {
 }
 /* article */
 .cooperation li {
-  background: #b6b6b6;
-  width: 480px;
-  height: 144px;
-  border: 1px solid #333;
+  display: inline-block;
+  text-align: center;
   box-sizing: border-box;
 }
 

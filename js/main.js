@@ -11,8 +11,9 @@ $(function () {
   // $('body').on("click", function(){
   //   $('form').css("display", "none")
   // });
-  $('.fa-solid').on("click", function(){
-    $('form').css("display", "block")
+  $('.top-select').on("click", function(){
+    $('.bg-main2').addClass("on");
+    $('form').stop().slideDown(600);
   });
 
   $(".tab-title li:nth-child(1)").on("click", function () {
@@ -69,31 +70,42 @@ $(function () {
     $(".jubu_infos").stop().slideUp(300);
   });
 
-  $(".community_title > h2:nth-child(1)").on("click", function () {
-    $(".news").removeClass("d-none");
-    $(".event").addClass("d-none");
-    $(".qna").addClass("d-none");
-    $(".gamaeng").addClass("d-none");
-  });
-  $(".community_title > h2:nth-child(2)").on("click", function () {
-    $(".news").addClass("d-none");
-    $(".event").removeClass("d-none");
-    $(".qna").addClass("d-none");
-    $(".gamaeng").addClass("d-none");
+  // $(".community_title > h2:nth-child(1)").on("click", function () {
+  //   $(".news").removeClass("d-none");
+  //   $(".event").addClass("d-none");
+  //   $(".qna").addClass("d-none");
+  //   $(".gamaeng").addClass("d-none");
+  // });
+  // $(".community_title > h2:nth-child(2)").on("click", function () {
+  //   $(".news").addClass("d-none");
+  //   $(".event").removeClass("d-none");
+  //   $(".qna").addClass("d-none");
+  //   $(".gamaeng").addClass("d-none");
 
-  });
-  $(".community_title > h2:nth-child(3)").on("click", function () {
-    $(".news").addClass("d-none");
-    $(".event").addClass("d-none");
-    $(".qna").removeClass("d-none");
-    $(".gamaeng").addClass("d-none");
-  });
-  $(".community_title > h2:nth-child(4)").on("click", function () {
-    $(".news").addClass("d-none");
-    $(".event").addClass("d-none");
-    $(".qna").addClass("d-none");
-    $(".gamaeng").removeClass("d-none");
-  });
+  // });
+  // $(".community_title > h2:nth-child(3)").on("click", function () {
+  //   $(".news").addClass("d-none");
+  //   $(".event").addClass("d-none");
+  //   $(".qna").removeClass("d-none");
+  //   $(".gamaeng").addClass("d-none");
+  // });
+  // $(".community_title > h2:nth-child(4)").on("click", function () {
+  //   $(".news").addClass("d-none");
+  //   $(".event").addClass("d-none");
+  //   $(".qna").addClass("d-none");
+  //   $(".gamaeng").removeClass("d-none");
+  // });
+  let tabBtn = $('.community_title > h2');
+  let tabCont = $('.community_contents > ul');
+  tabCont.hide().eq(0).show();
+
+  tabBtn.on("click", function(){
+    const index = $(this).index();
+
+    $(this).addClass("on sec").siblings().removeClass("on sec");
+    tabCont.eq(index).show().siblings().hide()
+  })
+
 
   $('.community_title h2').on("mouseover", function(){
     console.log("over");
