@@ -110,7 +110,7 @@ $(function () {
     (this).find('h2').css("backguround", "#333333")
   })
 
-  let hoverBtn = $('#setitems > .setitem01')
+  let hoverBtn = $('#setitems .setitem01')
   hoverBtn.on("mouseover", function() {
     $(this).find('.setitem_text').addClass('on').siblings().removeClass("on");
   })
