@@ -118,6 +118,20 @@ $(function () {
     $(this).find('.setitem_text').removeClass('on')
   })
 
+
+  let currentIndex = 0 ; //현재 이미지 번호 부여
+  setInterval(function(){
+    let nextIndex = (currentIndex + 1) % 3;
+    $('.slider').eq(currentIndex).fadeOut();
+    $('.slider').eq(nextIndex).fadeIn();
+    currentIndex = nextIndex;
+
+    // console.log("currentIndex :" + currentIndex);
+    // console.log("nextIndex :" + nextIndex);
+
+  }, 3000);
+
+
   //화살표 애니메이션
   // $(".arrows").on("mouseover", function(){
   //   $(".left_arr").css("background", "rgba(255, 255, 255, 0.5)");

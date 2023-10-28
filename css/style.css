@@ -456,10 +456,48 @@ input {
   box-sizing: border-box;
 }
 .new h2 {
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   font-size: 2rem;
   color: #333;
 }
+
+/* 슬라이더 작업 */
+.sliderWrap {
+ position: relative;
+}
+.sliderWrap > div {
+  display: none;
+}
+.sliderWrap > div:nth-child(1) {
+  display: block;
+}
+.sliderWrap .slider {
+  position: absolute;
+  width: 700px;
+  height: 410px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.sliderWrap .slider img {
+  vertical-align: top;
+  width: 700px;
+  position: absolute;
+  bottom: 0;
+}
+.sliderWrap .slider p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--font-color);
+  padding: 3rem 0;
+  transform: translate(-50%, 0);
+}
+
 /* article */
 .cooperation li {
   display: inline-block;
