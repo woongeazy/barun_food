@@ -128,8 +128,20 @@ strong {
   height: 352px;
 }
 
-/*  */
-
+/* popup */
+.popup {
+  position: absolute;
+  background: var(--font-color);
+  z-index: 1000;
+}
+.popup h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 1rem 0 0;
+}
+.popup img {
+  width: 500px;
+}
 
 /* header */
 header {
