@@ -107,7 +107,7 @@ $(function () {
   })
 
   $('.community_title h2').on("mouseover", function(){
-    (this).find('h2').css("backguround", "#333333")
+    $(this).find('h2').css("backguround", "#333333")
   })
 
   let hoverBtn = $('#setitems .setitem01')

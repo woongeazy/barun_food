@@ -443,6 +443,9 @@ input {
 .community_contents p {
   padding: 1rem 1rem;
   font-size: 1.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .community_contents p:nth-child(2) {
   font-size: 1.125rem;
