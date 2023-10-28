@@ -95,6 +95,7 @@ $(function () {
   //   $(".qna").addClass("d-none");
   //   $(".gamaeng").removeClass("d-none");
   // });
+  
   let tabBtn = $('.community_title > h2');
   let tabCont = $('.community_contents > ul');
   tabCont.hide().eq(0).show();
