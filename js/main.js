@@ -95,22 +95,27 @@ $(function () {
   //   $(".qna").addClass("d-none");
   //   $(".gamaeng").removeClass("d-none");
   // });
-  
-  let tabBtn = $('.community_title > h2');
-  let tabCont = $('.community_contents > ul');
-  tabCont.hide().eq(0).show();
+  let tabBtn = $('.community_title > h2');      //버튼 설정
+  let tabCont = $('.community_contents > ul');  //콘텐츠 설정
+  tabCont.hide().eq(0).show();                  //첫번째 콘텐츠만 보이게 설정
 
   tabBtn.on("click", function(){
-    const index = $(this).index();
+    const index = $(this).index();              //클릭한 번호를 저장
 
-    $(this).addClass("on sec").siblings().removeClass("on sec");
-    tabCont.eq(index).show().siblings().hide()
+    $(this).addClass("on sec").siblings().removeClass("on sec");  //내가 클릭한 버튼에 클래스를 추가하고 나머지 클래스에선 제거
+    tabCont.eq(index).show().siblings().hide()                    //내가 클릭한 버튼의 콘텐츠는 보여주고 나머지는 숨김
   })
 
-
   $('.community_title h2').on("mouseover", function(){
-    console.log("over");
     (this).find('h2').css("backguround", "#333333")
+  })
+
+  let hoverBtn = $('#setitems > .setitem01')
+  hoverBtn.on("mouseover", function() {
+    $(this).find('.setitem_text').addClass('on').siblings().removeClass("on");
+  })
+  hoverBtn.on("mouseout", function(){
+    $(this).find('.setitem_text').removeClass('on')
   })
 
   //화살표 애니메이션
