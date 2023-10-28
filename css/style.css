@@ -617,8 +617,8 @@ input {
   line-height: 1.3;
 }
 .jubu_info img {
-  width: 640px;
-  border-radius: 30px;
+  /* width: 640px; */
+  /* border-radius: 30px; */
 }
 .jubu_info button {
   border: none;

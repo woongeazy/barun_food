@@ -8,6 +8,7 @@ $(function () {
     pauseOnFocus: true,
   });
   
+  
   // $('body').on("click", function(){
   //   $('form').css("display", "none")
   // });
