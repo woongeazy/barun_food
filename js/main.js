@@ -8,6 +8,9 @@ $(function () {
     pauseOnFocus: true,
   });
   
+  $('.close_btns button').on("click", function(){
+    $('.popup_bg').addClass("d-none")
+  })
   
   // $('body').on("click", function(){
   //   $('form').css("display", "none")

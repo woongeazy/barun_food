@@ -129,20 +129,54 @@ strong {
 }
 
 /* popup */
+.popup_bg {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
 .popup {
   position: absolute;
-  background: var(--font-color);
+  background: var(--lightfont-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1000;
+  padding: 2rem 0 0 0;
+}
+.close_box {
+  width: 20px;
+  height: 20px;
 }
 .popup h2 {
   text-align: center;
+  color: var(--font-color);
   font-size: 2rem;
-  margin: 0 1rem 0 0;
+  margin: 0 0 1rem 0;
+}
+.popup ul li {
+  background: var(--third-color);
+  color: var(--font-color);
+  text-align: center;
+}
+.popup ul li p {
+  padding: 1rem 0;
 }
 .popup img {
   width: 500px;
 }
-
+.close_btns {
+  background: var(--lightfont-color);
+  color: var(--font-color);
+}
+.popup button {
+  border: none;
+  background: none;
+  color: var(--font-color);
+}
 /* header */
 header {
   margin: 2rem 0;
@@ -621,6 +655,9 @@ input {
   color: inherit;
   margin: 2rem 0 0 0;
 }
+.jubu-text button:hover {
+  background: #4995ff;
+}
 .jubu-text p {
   padding: 2rem;
   margin: 2.5rem 0 2.5rem 1rem;
@@ -660,4 +697,7 @@ input {
   padding: .5rem 1rem;
   color: inherit;
   margin: 2rem 0 2rem 0;
+}
+.jubu_info button:hover {
+  background: #4995ff;
 }
