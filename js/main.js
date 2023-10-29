@@ -114,13 +114,20 @@ $(function () {
     $(this).find('h2').css("backguround", "#333333")
   })
 
-  let hoverBtn = $('#setitems .setitem01')
-  hoverBtn.on("mouseover", function() {
-    $(this).find('.setitem_text').addClass('on').siblings().removeClass("on");
+  $('.setitem01').on("mouseover", function() {
+    $(this).find('.setitem_text').addClass('on');
   })
-  hoverBtn.on("mouseout", function(){
-    $(this).find('.setitem_text').removeClass('on')
-  })
+  // $('.setitem01').on("mouseout", function() {
+  //   $(this).find('.setitem_text').removeClass('on');
+  // })
+
+  // let hoverBtn = $('#setitems .setitem01')
+  // hoverBtn.on("mouseover", function() {
+  //   $(this).find('.setitem_text').addClass('on');
+  // })
+  // hoverBtn.on("mouseout", function(){
+  //   $(this).find('.setitem_text').removeClass('on')
+  // })
 
 
   let currentIndex = 0 ; //현재 이미지 번호 부여

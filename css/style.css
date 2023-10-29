@@ -712,3 +712,32 @@ input {
 .jubu_info button:hover {
   background: #4995ff;
 }
+
+@media screen and (max-width: 412px) {
+  .popup_bg {
+    display: none;
+  }
+  .sns_icon {
+    display: none;
+  }
+  .logo img {
+    width: 100px;
+    margin: 0 0 0 1rem;
+  }
+  .login {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+}
