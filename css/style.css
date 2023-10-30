@@ -221,9 +221,6 @@ header {
   display: inline-block;
   padding: 27px 96px;
 }
-#gnb > li > a:hover {
-  background: var(--third-color);
-}
 #gnb > li:nth-child(1) {
   margin: 0 0 0 5rem;
 }
@@ -264,7 +261,7 @@ header {
   top: 100;
   z-index: 10;
   transition: all 300ms;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
 }
 .bg-main.on::after {
   height: 240px;
@@ -364,6 +361,9 @@ input[type="submit"] {
   white-space: nowrap;
   text-align: center;
 }
+.setitem_text p:nth-last-child(1) {
+  color: #c7c7c7;
+}
 .app_text {
   position: absolute;
   top: 4rem;
@@ -380,6 +380,9 @@ input[type="submit"] {
   font-size: 2rem;
   font-weight: bold;
   margin: 2rem 0 0 0;
+}
+.app_text button:hover {
+  background: var(--fourd-color);
 }
 .box_radius {
   position: absolute;
@@ -435,7 +438,6 @@ input[type="submit"] {
   margin: 0 0 12rem 0;
 }
   .setitem01 .on {
-    
     top: 0;
   }
 
@@ -444,6 +446,7 @@ input[type="submit"] {
   border-radius: 30px;
   box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.5);
 }
+
 
 /* 하단 탭 */
 .community_continer {

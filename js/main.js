@@ -164,10 +164,12 @@ $(function () {
   $("#gnb > li").on("mouseover", function () {
     $(".sub").stop().slideDown(250);
     $('.bg-main').addClass("on");
+    $(this).find(" > a").css("background", "var(--third-color)")
   });
   $("#gnb > li").on("mouseout", function () {
     $(".sub").stop().slideUp(250);
     $('.bg-main').removeClass("on");
+    $(this).find(" > a").css("background", "none")
   });
 
   $(".jubu-text button").on("click", function () {
