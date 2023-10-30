@@ -223,8 +223,11 @@ $(function () {
 
 
   $("#m_gnb > li").on("click", function(){
-    $(this).find(".m_lnb").css("display", "block")
+    $(this).find(".m_lnb").stop().slideDown(300)
   })
+  // $("#m_gnb > li").on("click", function(){
+  //   $(this).find(".m_lnb").stop().slideUp(300)
+  // })
 });
 
 
