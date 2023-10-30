@@ -178,4 +178,43 @@ $(function () {
   $(".jubu_info > p").on("click", function () {
     $(".jubu_infos").stop().slideUp(300);
   });
+
+
+
+  let mcurrentIndex = 0;
+  // $(".m_sliders_wrap").append($(".m_slider").first().clone(true));   //m_sliders_wrap의 마지막에 m_slider의 첫번째 div를 복제해라
+
+  setInterval(function(){
+    mcurrentIndex++;
+    $(".m_sliders_wrap").animate({marginLeft: -mcurrentIndex * 33.33 + "vw"},600);
+    console.log(mcurrentIndex);
+
+    if(mcurrentIndex == 3){
+      setTimeout(function(){
+        $(".m_sliders_wrap").animate({marginLeft: 0}, 0);
+        mcurrentIndex = 0;
+      }, 700)
+    }
+  },3000)
+
+  
+  // setInterval(function(){
+  //   mcurrentIndex++;
+  //   $(".m_sliders_wrap").css("transform", "translate("+ -mcurrentIndex * 33.33+"vw)")
+  //   console.log(mcurrentIndex);
+
+  //   if(mcurrentIndex == 3){
+  //     setTimeout(function(){
+  //       $(".m_sliders_wrap").css("transition", "none")
+  //       mcurrentIndex = 0;
+  //       $(".m_sliders_wrap").css("transition", "all", "300ms")
+  //     }, 700)
+  //   }
+  // },3000)
+
+
 });
+
+
+
+

@@ -732,30 +732,17 @@ article h2 {
 }
 
 @media screen and (max-width: 412px) {
-  .popup_bg {
-    display: none;
-  }
-  .sns_icon {
-    display: none;
+  .headers {
+    margin: 0 1rem;
   }
   .logo img {
     width: 100px;
-    margin: 0 0 0 1rem;
   }
-  .login {
-    display: none;
+  .m_width {
+    overflow: hidden;
+    max-width: 100%;
   }
-  nav {
-    display: none;
+  .m_slider img {
+    width: 33.33vw;
   }
-
-
-
-
-
-
-
-
-
-
 }
