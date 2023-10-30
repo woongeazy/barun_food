@@ -12,6 +12,10 @@ $(function () {
     $('.popup_bg').addClass("d-none")
   })
   
+  $('.btnSubmit').on("click", function(){
+    $('#btnSubmit').on("click")
+  })
+
   // $('body').on("click", function(){
   //   $('form').css("display", "none")
   // });
@@ -114,8 +118,11 @@ $(function () {
     $(this).find('h2').css("backguround", "#333333")
   })
 
-  $('.setitem01').on("mouseover", function() {
+  $('.setitem01').on("mouseenter", function() {
     $(this).find('.setitem_text').addClass('on');
+  })
+  $('.setitem01').on("mouseleave", function() {
+    $(this).find('.setitem_text').removeClass('on');
   })
   // $('.setitem01').on("mouseout", function() {
   //   $(this).find('.setitem_text').removeClass('on');
