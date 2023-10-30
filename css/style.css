@@ -18,6 +18,9 @@ body {
   background: #fff;
 }
 /* 공용 */
+.flex-column {
+  flex-direction: column
+}
 strong {
   font-size: 4rem;
 }
@@ -733,16 +736,57 @@ article h2 {
 
 @media screen and (max-width: 412px) {
   .headers {
-    margin: 0 1rem;
+    padding: 2rem 1rem;
   }
   .logo img {
     width: 100px;
   }
   .m_width {
     overflow: hidden;
-    max-width: 100%;
+    max-width: 100vw;
   }
   .m_slider img {
     width: 33.33vw;
+  }
+  .m_menu {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 1000px;
+  }
+  .m_menu_bg {
+    position: absolute;
+    top: 0;
+    right: -70vw;
+    width: 70vw;
+    height: 1000px;
+    transition: all 300ms;
+    background: var(--fourd-color);
+  }
+  .m_menu_header {
+    margin: 2rem 1rem;
+  }
+  .m_search {
+    border-radius: 100px;
+    margin: 0 .5rem;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  #m_gnb {
+    background: var(--primary-color);
+  }
+  #m_gnb > li > a {
+    width: 100%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+  }
+  
+  .m_lnb {
+    display: none;
+    background: var(--secondary-color);
+    width: 100%;
+  }
+  .m_lnb li {
+    padding: .5rem 0 .5rem 3rem;
   }
 }

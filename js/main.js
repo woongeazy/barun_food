@@ -187,7 +187,7 @@ $(function () {
   setInterval(function(){
     mcurrentIndex++;
     $(".m_sliders_wrap").animate({marginLeft: -mcurrentIndex * 33.33 + "vw"},600);
-    console.log(mcurrentIndex);
+    // console.log(mcurrentIndex);
 
     if(mcurrentIndex == 3){
       setTimeout(function(){
@@ -213,6 +213,18 @@ $(function () {
   // },3000)
 
 
+  $('.fa-bars').on("click", function(){
+    $('.m_menu_bg').css("right", "0vw")
+  });
+  $('.fa-xmark').on("click", function(){
+    $('.m_menu_bg').css("right", "-70vw")
+  });
+
+
+
+  $("#m_gnb > li").on("click", function(){
+    $(this).find(".m_lnb").css("display", "block")
+  })
 });
 
 
