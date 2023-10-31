@@ -1,4 +1,7 @@
 $(function () {
+
+  console.log(screen.availWidth); //스크린 객채 / 가로폭
+  
   $("#hero").slick({
     slidesToShow: 3,
     dots: true,
@@ -7,21 +10,21 @@ $(function () {
     autoplaySpeed: 3000,
     pauseOnFocus: true,
   });
-  
-  $('.close_btns button').on("click", function(){
-    $('.popup_bg').addClass("d-none")
-  })
-  
-  $('.btnSubmit').on("click", function(){
-    $('#btnSubmit').on("click")
-  })
+
+  $(".close_btns button").on("click", function () {
+    $(".popup_bg").addClass("d-none");
+  });
+
+  $(".btnSubmit").on("click", function () {
+    $("#btnSubmit").on("click");
+  });
 
   // $('body').on("click", function(){
   //   $('form').css("display", "none")
   // });
-  $('.top-select').on("click", function(){
-    $('.bg-main2').addClass("on");
-    $('form').stop().slideDown(600);
+  $(".top-select").on("click", function () {
+    $(".bg-main2").addClass("on");
+    $("form").stop().slideDown(600);
   });
 
   $(".tab-title li:nth-child(1)").on("click", function () {
@@ -103,27 +106,27 @@ $(function () {
   //   $(".qna").addClass("d-none");
   //   $(".gamaeng").removeClass("d-none");
   // });
-  let tabBtn = $('.community_title > h2');      //버튼 설정
-  let tabCont = $('.community_contents > ul');  //콘텐츠 설정
-  tabCont.hide().eq(0).show();                  //첫번째 콘텐츠만 보이게 설정
+  let tabBtn = $(".community_title > h2"); //버튼 설정
+  let tabCont = $(".community_contents > ul"); //콘텐츠 설정
+  tabCont.hide().eq(0).show(); //첫번째 콘텐츠만 보이게 설정
 
-  tabBtn.on("click", function(){
-    const index = $(this).index();              //클릭한 번호를 저장
+  tabBtn.on("click", function () {
+    const index = $(this).index(); //클릭한 번호를 저장
 
-    $(this).addClass("on sec").siblings().removeClass("on sec");  //내가 클릭한 버튼에 클래스를 추가하고 나머지 클래스에선 제거
-    tabCont.eq(index).show().siblings().hide()                    //내가 클릭한 버튼의 콘텐츠는 보여주고 나머지는 숨김
-  })
+    $(this).addClass("on sec").siblings().removeClass("on sec"); //내가 클릭한 버튼에 클래스를 추가하고 나머지 클래스에선 제거
+    tabCont.eq(index).show().siblings().hide(); //내가 클릭한 버튼의 콘텐츠는 보여주고 나머지는 숨김
+  });
 
-  $('.community_title h2').on("mouseover", function(){
-    $(this).find('h2').css("backguround", "#333333")
-  })
+  $(".community_title h2").on("mouseover", function () {
+    $(this).find("h2").css("backguround", "#333333");
+  });
 
-  $('.setitem01').on("mouseenter", function() {
-    $(this).find('.setitem_text').addClass('on');
-  })
-  $('.setitem01').on("mouseleave", function() {
-    $(this).find('.setitem_text').removeClass('on');
-  })
+  $(".setitem01").on("mouseenter", function () {
+    $(this).find(".setitem_text").addClass("on");
+  });
+  $(".setitem01").on("mouseleave", function () {
+    $(this).find(".setitem_text").removeClass("on");
+  });
   // $('.setitem01').on("mouseout", function() {
   //   $(this).find('.setitem_text').removeClass('on');
   // })
@@ -136,19 +139,16 @@ $(function () {
   //   $(this).find('.setitem_text').removeClass('on')
   // })
 
-
-  let currentIndex = 0 ; //현재 이미지 번호 부여
-  setInterval(function(){
+  let currentIndex = 0; //현재 이미지 번호 부여
+  setInterval(function () {
     let nextIndex = (currentIndex + 1) % 3;
-    $('.slider').eq(currentIndex).fadeOut();
-    $('.slider').eq(nextIndex).fadeIn();
+    $(".slider").eq(currentIndex).fadeOut();
+    $(".slider").eq(nextIndex).fadeIn();
     currentIndex = nextIndex;
 
     // console.log("currentIndex :" + currentIndex);
     // console.log("nextIndex :" + nextIndex);
-
   }, 3000);
-
 
   //화살표 애니메이션
   // $(".arrows").on("mouseover", function(){
@@ -163,13 +163,13 @@ $(function () {
 
   $("#gnb > li").on("mouseover", function () {
     $(".sub").stop().slideDown(250);
-    $('.bg-main').addClass("on");
-    $(this).find(" > a").css("background", "var(--third-color)")
+    $(".bg-main").addClass("on");
+    $(this).find(" > a").css("background", "var(--third-color)");
   });
   $("#gnb > li").on("mouseout", function () {
     $(".sub").stop().slideUp(250);
-    $('.bg-main').removeClass("on");
-    $(this).find(" > a").css("background", "none")
+    $(".bg-main").removeClass("on");
+    $(this).find(" > a").css("background", "none");
   });
 
   $(".jubu-text button").on("click", function () {
@@ -179,25 +179,25 @@ $(function () {
     $(".jubu_infos").stop().slideUp(300);
   });
 
-
-
   let mcurrentIndex = 0;
   // $(".m_sliders_wrap").append($(".m_slider").first().clone(true));   //m_sliders_wrap의 마지막에 m_slider의 첫번째 div를 복제해라
 
-  setInterval(function(){
+  setInterval(function () {
     mcurrentIndex++;
-    $(".m_sliders_wrap").animate({marginLeft: -mcurrentIndex * 100 + "vw"},600);
+    $(".m_sliders_wrap").animate(
+      { marginLeft: -mcurrentIndex * 100 + "vw" },
+      600
+    );
     // console.log(mcurrentIndex);
 
-    if(mcurrentIndex == 3){
-      setTimeout(function(){
-        $(".m_sliders_wrap").animate({marginLeft: 0}, 0);
+    if (mcurrentIndex == 3) {
+      setTimeout(function () {
+        $(".m_sliders_wrap").animate({ marginLeft: 0 }, 0);
         mcurrentIndex = 0;
-      }, 700)
+      }, 700);
     }
-  },3000)
+  }, 3000);
 
-  
   // setInterval(function(){
   //   mcurrentIndex++;
   //   $(".m_sliders_wrap").css("transform", "translate("+ -mcurrentIndex * 33.33+"vw)")
@@ -212,21 +212,14 @@ $(function () {
   //   }
   // },3000)
 
-
-  $('.fa-bars').on("click", function(){
-    $('.m_menu_bg').css("right", "0vw")
+  $(".fa-bars").on("click", function () {
+    $(".m_menu_bg").css("right", "0vw");
   });
-  $('.fa-xmark').on("click", function(){
-    $('.m_menu_bg').css("right", "-70vw")
+  $(".fa-xmark").on("click", function () {
+    $(".m_menu_bg").css("right", "-70vw");
   });
 
-
-
-  $("#m_gnb > li").on("click", function(){
-    $(this).find(".m_lnb").stop().slideToggle(300)
-  })
+  $("#m_gnb > li").on("click", function () {
+    $(this).find(".m_lnb").stop().slideToggle(300);
+  });
 });
-
-
-
-
