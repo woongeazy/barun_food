@@ -186,7 +186,7 @@ $(function () {
 
   setInterval(function(){
     mcurrentIndex++;
-    $(".m_sliders_wrap").animate({marginLeft: -mcurrentIndex * 33.33 + "vw"},600);
+    $(".m_sliders_wrap").animate({marginLeft: -mcurrentIndex * 100 + "vw"},600);
     // console.log(mcurrentIndex);
 
     if(mcurrentIndex == 3){
@@ -223,11 +223,8 @@ $(function () {
 
 
   $("#m_gnb > li").on("click", function(){
-    $(this).find(".m_lnb").stop().slideDown(300)
+    $(this).find(".m_lnb").stop().slideToggle(300)
   })
-  // $("#m_gnb > li").on("click", function(){
-  //   $(this).find(".m_lnb").stop().slideUp(300)
-  // })
 });
 
 

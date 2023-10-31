@@ -56,84 +56,684 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="popup_bg">
-      <div class="popup">
-        <h2>구성 페이지</h2>
-        <ul class="d-flex gap-1">
-          <li>
-            <p>index.html</p>
-            <img src="images/index.png" alt="index 페이지" />
-          </li>
-          <li>
-            <p>brand.html</p>
-            <img src="images/brand.png" alt="brand 페이지" />
-          </li>
-        </ul>
-        <div class="close_btns d-flex justify-between align-center">
-          <label
-            ><input
-              type="checkbox"
-              name="today_close"
-              class="close_box"
-              value="close"
-            />오늘 하루 그만보기</label
-          >
-          <button>닫기 X</button>
-        </div>
-      </div>
-    </div>
-    <header>
-      <div class="d-flex container margin-auto align-center justify-between">
-        <ul class="sns_icon d-flex">
-          <li>
-            <a href="https://www.youtube.com/"
-              ><img src="images/sns_ytb.png" alt="유튜브"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/"
-              ><img src="images/sns_insta.png" alt="인스타그램"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/"
-              ><img src="images/sns_fb.png" alt="페이스북"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.naver.com/"
-              ><img src="images/sns_blog.png" alt="블로그"
-            /></a>
-          </li>
-        </ul>
-        <div class="logo">
-          <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
-        </div>
-        <div class="login d-flex align-center">
-          <ul class="d-flex">
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
-          </ul>
-          <i class="fa-solid fa-magnifying-glass top-select"></i>
-        </div>
-      </div>
-    </header>
-    <nav>
-      <div class="bg-main">
-        <div class="bg-main2"></div>
-        <div class="container margin-auto">
-          <ul id="gnb" class="d-flex">
+    <div class="web_main">
+      <div class="popup_bg">
+        <div class="popup">
+          <h2>구성 페이지</h2>
+          <ul class="d-flex gap-1">
             <li>
-              <a href="#">회사소개</a>
-              <ul class="sub">
+              <p>index.html</p>
+              <img src="images/index.png" alt="index 페이지" />
+            </li>
+            <li>
+              <p>brand.html</p>
+              <img src="images/brand.png" alt="brand 페이지" />
+            </li>
+          </ul>
+          <div class="close_btns d-flex justify-between align-center">
+            <label
+              ><input
+                type="checkbox"
+                name="today_close"
+                class="close_box"
+                value="close"
+              />오늘 하루 그만보기</label
+            >
+            <button>닫기 X</button>
+          </div>
+        </div>
+      </div>
+      <header>
+        <div class="d-flex container margin-auto align-center justify-between">
+          <ul class="sns_icon d-flex">
+            <li>
+              <a href="https://www.youtube.com/"
+                ><img src="images/sns_ytb.png" alt="유튜브"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"
+                ><img src="images/sns_insta.png" alt="인스타그램"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/"
+                ><img src="images/sns_fb.png" alt="페이스북"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.naver.com/"
+                ><img src="images/sns_blog.png" alt="블로그"
+              /></a>
+            </li>
+          </ul>
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+          </div>
+          <div class="login d-flex align-center">
+            <ul class="d-flex">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+            </ul>
+            <i class="fa-solid fa-magnifying-glass top-select"></i>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <div class="bg-main">
+          <div class="bg-main2"></div>
+          <div class="container margin-auto">
+            <ul id="gnb" class="d-flex">
+              <li>
+                <a href="#">회사소개</a>
+                <ul class="sub">
+                  <li><a href="#">바른푸드 소개</a></li>
+                  <li><a href="#">연혁</a></li>
+                  <li><a href="#">찾아오시는 길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">제품</a>
+                <ul class="sub">
+                  <li><a href="#">세트</a></li>
+                  <li><a href="#">육가공품</a></li>
+                  <li><a href="#">신선</a></li>
+                  <li><a href="#">냉동</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="brand.html">브랜드</a>
+                <ul class="sub">
+                  <li><a href="#">주부 9단</a></li>
+                  <li><a href="#">프라임</a></li>
+                  <li><a href="#">알뜨레</a></li>
+                  <li><a href="#">천년풍미</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">공지사항</a>
+                <ul class="sub">
+                  <li><a href="#">공고 및 공지사상</a></li>
+                  <li><a href="#">법령자료</a></li>
+                  <li><a href="#">인증관련 일정표</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">고객센터</a>
+                <ul class="sub">
+                  <li><a href="#">Q&A</a></li>
+                  <li><a href="#">자주묻는 질문</a></li>
+                  <li><a href="#">리뷰</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <form>
+            <fieldset>
+              <!-- <legend></legend> -->
+              <input
+                type="text"
+                class="select_window"
+                placeholder="검색어를 입력하고 Enter 또는 검색 아이콘을 클릭 해주세요."
+              />
+              <!-- submit -->
+              <input type="submit" class="m_search_btn" value="&#xf002">
+            </fieldset>
+          </form>
+        </div>
+      </nav>
+      <section>
+        <div class="container margin-auto">
+          <!-- <div class="arrows">
+            <img src="images/left.png" class="left_arr" alt="left" />
+            <img src="images/right.png" class="right_arr" alt="right" />
+          </div> -->
+          <div id="hero" class="d-flex">
+            <div><img src="images/carousel1.jpg" alt="캐러셀1" /></div>
+            <div><img src="images/carousel2.jpg" alt="캐러셀2" /></div>
+            <div><img src="images/carousel3.jpg" alt="캐러셀3" /></div>
+            <div><img src="images/carousel1.jpg" alt="캐러셀1" /></div>
+            <div><img src="images/carousel2.jpg" alt="캐러셀2" /></div>
+            <div><img src="images/carousel3.jpg" alt="캐러셀3" /></div>
+          </div>
+        </div>
+      </section>
+      <main>
+        <div class="container margin-auto">
+          <h1 class="main_title my-3"><strong>오직!</strong> 바른푸드에서만</h1>
+          <div class="main_nav">
+            <ul class="tab-title justify-center gap-2 d-flex">
+              <li>세트</li>
+              <li>육가공품</li>
+              <li>신선</li>
+              <li>냉동</li>
+            </ul>
+            <div class="tab-contents">
+              <div id="setitems" class="d-flex justify-between">
+                <div class="setitem01">
+                  <img src="images/set1.jpg" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="setitem01">
+                  <img src="images/set2.jpg" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="setitem01">
+                  <img src="images/set3.jpg" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="setitem01">
+                  <img src="images/set4.jpg" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="meet" class="d-none d-flex justify-between">
+                <div class="setitem01">
+                  <img src="images/meet1.jpg" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="setitem01">
+                  <img src="images/meet2.jpg" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="setitem01">
+                  <img src="images/meet3.jpg" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="setitem01">
+                  <img src="images/meet4.jpg" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="fresh" class="d-none d-flex justify-between">
+                <div class="setitem01">
+                  <img src="images/fresh1.png" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="setitem01">
+                  <img src="images/fresh2.png" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="setitem01">
+                  <img src="images/fresh3.png" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="setitem01">
+                  <img src="images/fresh4.png" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="cool" class="d-none d-flex justify-between">
+                <div class="setitem01">
+                  <img src="images/cool1.png" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="setitem01">
+                  <img src="images/cool2.png" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="setitem01">
+                  <img src="images/cool3.png" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="setitem01">
+                  <img src="images/cool4.png" alt="세트 상품1" />
+                  <div class="setitem_text">
+                    <div>
+                      <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
+                      <div class="d-flex">
+                        <p>32%</p>
+                        <p>135,000원</p>
+                        <p class="center-line gray">180,000원</p>
+                      </div>
+                      <p>
+                        한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
+                        (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-8">
+          <div class="app_banner bg-g">
+            <div class="container margin-auto pos-r">
+              <div class="app_text">
+                <h3>
+                  집에서 간편하게 <strong>원터치</strong>로<br />주문해보세요.
+                </h3>
+                <button>앱으로 주문하기</button>
+              </div>
+              <div class="box_radius">
+                <img src="images/app_banner.png" alt="앱 베너 이미지" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-4">
+          <div class="main_title container margin-auto">
+            <h1 class="my-3">커뮤니티</h1>
+          </div>
+          <div class="container margin-auto d-flex justify-between">
+            <div class="community_continer">
+              <div class="community_title d-flex justify-between">
+                <h2 class="on sec">공지사항</h2>
+                <h2>이벤트</h2>
+                <h2>문의사항</h2>
+                <h2>가맹절차</h2>
+              </div>
+              <div class="community_contents">
+                <ul class="news">
+                  <li class="d-flex justify-between">
+                    <p>산포 나주 산포 농형로컬프드 직매장 오픈</p>
+                    <p>2023-10-25</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>나주 로컬 푸드 미래 전략 토론회</p>
+                    <p>2023-10-20</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>나주 로컬푸드 임직원 농촌일손돕기</p>
+                    <p>2023-10-17</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>2023년 생산자 선전지 견학 일정</p>
+                    <p>2023-10-12</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>2023년 산포로컬푸드센터 제1차 생산자 보수교육 안내</p>
+                    <p>2023-10-07</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>나주빛가람동 로컬푸드 2023년 제 9기 신규농가교육</p>
+                    <p>2023-09-27</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>
+                      재단법인 나주빛가람로컬푸드센터 직원(정산원) 채용 최종합격자
+                      공고
+                    </p>
+                    <p>2023-09-20</p>
+                  </li>
+                </ul>
+                <ul class="event d-none">
+                  <li class="d-flex justify-between">
+                    <p>직매장 개장 6주년 기념행사</p>
+                    <p>2023-10-24</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>나주로컬푸드 버섯 농가와 함께 하는 소비자 체험 행사</p>
+                    <p>2023-10-12</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>농협 흑마늘 훈제오리 NS홈쇼핑서 판매</p>
+                    <p>2023-10-07</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>
+                      농협 '주부9단 프랑크소시지', 한글날 맞이 한정 특별판 출시
+                    </p>
+                    <p>2023-10-06</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>[9월] 제철은 향긋하구나! (인삼, 무화과)</p>
+                    <p>2023-09-20</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>농협, 신제품 '버터구이 치킨' 2종 출시</p>
+                    <p>2023-09-12</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>농협 , 추석 선물세트 사전예약 ...최대 45% 할인</p>
+                    <p>2023-08-23</p>
+                  </li>
+                </ul>
+                <ul class="qna d-none">
+                  <li class="d-flex justify-between">
+                    <p>생산지는 나주가 맞나요?</p>
+                    <p>2023-10-20</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>배송기간은 얼마나 걸리나요?</p>
+                    <p>2023-10-18</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>매장에 재고확인은 어떻게 확인하나요?</p>
+                    <p>2023-10-16</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>좋은 고기 고르는 법</p>
+                    <p>2023-10-14</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>동물성 단백질 얼마나 섭취해야 하나</p>
+                    <p>2023-10-12</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>연령별 균형 잡힌 육류 섭취</p>
+                    <p>2023-10-10</p>
+                  </li>
+                  <li class="d-flex justify-between">
+                    <p>고기에 대한 잘못된 상식들</p>
+                    <p>2023-10-08</p>
+                  </li>
+                </ul>
+                <ul class="gamaeng d-none text-center">
+                  <li>
+                    <img src="images/가맹절차.png" alt="가맹절차" />
+                  </li>
+                  <li><button>가입 문의</button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="new">
+              <h2>새소식</h2>
+              <div class="new_contents">
+                <div class="sliderWrap">
+                  <div class="slider s1">
+                    <img
+                      src="images/news1.jpg"
+                      alt="나주 산포 농형로컬프드 직매장"
+                    />
+                    <p>산포 나주 산포 농형로컬프드 직매장 오픈</p>
+                  </div>
+                  <div class="slider s2">
+                    <img
+                      src="images/news2.jpg"
+                      alt="나주 로컬 푸드 미래 전략 토론회"
+                    />
+                    <p>나주 로컬 푸드 미래 전략 토론회</p>
+                  </div>
+                  <div class="slider s3">
+                    <img
+                      src="images/news3.jpg"
+                      alt="나주 로컬푸드 임직원 농촌일손돕기"
+                    />
+                    <p>나주 로컬푸드 임직원 농촌일손돕기</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <article>
+        <div class="container margin-auto">
+          <h2>브랜드</h2>
+          <ul class="cooperation d-flex justify-between">
+            <li>
+              <img src="images/brand_logo01.png" alt="주부9단" />
+            </li>
+            <li>
+              <img src="images/brand_logo02.png" alt="프라임" />
+            </li>
+            <li>
+              <img src="images/brand_logo03.png" alt="알뜨레" />
+            </li>
+            <li>
+              <img src="images/brand_logo04.png" alt="천년풍미" />
+            </li>
+          </ul>
+        </div>
+      </article>
+      <footer>
+        <div class="bg-b">
+          <div class="container margin-auto py-2">
+            <div class="footer_logo">
+              <img src="images/logo_footer.png" alt="footer logo" />
+            </div>
+            <div class="footer_top">
+              <div class="d-flex justify-between align-center">
+                <ul class="d-flex">
+                  <li>회사소개</li>
+                  <li>이용약관</li>
+                  <li>개인정보취급방침</li>
+                  <li>사이트맵</li>
+                  <li><button>사업자정보확인</button></li>
+                </ul>
+                <div class="family_site">
+                  <select name="family" id="family_box" title="family">
+                    <option value="family-site">FAMILY-SITE</option>
+                    <option value="jubu9dan">주부9단</option>
+                    <option value="reome">프라임</option>
+                    <option value="alddre">알뜨레</option>
+                    <option value="chunnyunfungmy">천년풍미</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <p class="copyright">
+              Copyright&copy; 2023 Style Sanda All Rights Reseved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="mobile_web">
+      <div class="m_menu">
+        <div class="m_menu_bg">
+          <div class="m_menu_header d-flex align-center">
+            <input type="submit" class="m_search_btn" value="&#xf002">
+            <input
+              type="text"
+              class="m_search"
+              placeholder="검색어를 입력해 주세요"
+            />
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <ul id="m_gnb">
+            <li>
+              <a href="#" class="d-flex justify-between"
+                >회사소개 <img src="images/low_arr.png" alt="아레 화살표"
+              /></a>
+              <ul class="m_lnb">
                 <li><a href="#">바른푸드 소개</a></li>
                 <li><a href="#">연혁</a></li>
                 <li><a href="#">찾아오시는 길</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">제품</a>
-              <ul class="sub">
+              <a href="#" class="d-flex justify-between"
+                >제품 <img src="images/low_arr.png" alt="아레 화살표"
+              /></a>
+              <ul class="m_lnb">
                 <li><a href="#">세트</a></li>
                 <li><a href="#">육가공품</a></li>
                 <li><a href="#">신선</a></li>
@@ -141,25 +741,31 @@
               </ul>
             </li>
             <li>
-              <a href="brand.html">브랜드</a>
-              <ul class="sub">
-                <li><a href="#">주부 9단</a></li>
+              <a href="#" class="d-flex justify-between"
+                >브랜드 <img src="images/low_arr.png" alt="아레 화살표"
+              /></a>
+              <ul class="m_lnb">
+                <li><a href="#">주부9단</a></li>
                 <li><a href="#">프라임</a></li>
                 <li><a href="#">알뜨레</a></li>
-                <li><a href="#">천년풍미</a></li>
+                <li><a href="#">처년풍미</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">공지사항</a>
-              <ul class="sub">
-                <li><a href="#">공고 및 공지사상</a></li>
+              <a href="#" class="d-flex justify-between"
+                >공지사항 <img src="images/low_arr.png" alt="아레 화살표"
+              /></a>
+              <ul class="m_lnb">
+                <li><a href="#">공고 및 공지사항</a></li>
                 <li><a href="#">법령자료</a></li>
                 <li><a href="#">인증관련 일정표</a></li>
               </ul>
             </li>
             <li>
-              <a href="#">고객센터</a>
-              <ul class="sub">
+              <a href="#" class="d-flex justify-between"
+                >고객센터 <img src="images/low_arr.png" alt="아레 화살표"
+              /></a>
+              <ul class="m_lnb">
                 <li><a href="#">Q&A</a></li>
                 <li><a href="#">자주묻는 질문</a></li>
                 <li><a href="#">리뷰</a></li>
@@ -167,547 +773,37 @@
             </li>
           </ul>
         </div>
-        <form>
-          <fieldset>
-            <!-- <legend></legend> -->
-            <input
-              type="text"
-              class="select_window"
-              placeholder="검색어를 입력하고 Enter 또는 검색 아이콘을 클릭 해주세요."
-            />
-            <!-- submit -->
-            <input type="submit"/>
-            <i class="fa-solid fa-magnifying-glass select-text"></i>
-          </fieldset>
-        </form>
-      </div>
-    </nav>
-    <section>
-      <div class="container margin-auto">
-        <!-- <div class="arrows">
-          <img src="images/left.png" class="left_arr" alt="left" />
-          <img src="images/right.png" class="right_arr" alt="right" />
-        </div> -->
-        <div id="hero" class="d-flex">
-          <div><img src="images/carousel1.jpg" alt="캐러셀1" /></div>
-          <div><img src="images/carousel2.jpg" alt="캐러셀2" /></div>
-          <div><img src="images/carousel3.jpg" alt="캐러셀3" /></div>
-          <div><img src="images/carousel1.jpg" alt="캐러셀1" /></div>
-          <div><img src="images/carousel2.jpg" alt="캐러셀2" /></div>
-          <div><img src="images/carousel3.jpg" alt="캐러셀3" /></div>
+        <div class="d-flex justify-between align-center headers">
+          <div class="logo"><img src="images/logo.png" alt="logo" /></div>
+          <div class="icons">
+            <i class="fa-solid fa-magnifying-glass top-select"></i>
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
-      </div>
-    </section>
-    <main>
-      <div class="container margin-auto">
-        <h1 class="main_title my-3"><strong>오직!</strong> 바른푸드에서만</h1>
-        <div class="main_nav">
-          <ul class="tab-title justify-center gap-2 d-flex">
-            <li>세트</li>
-            <li>육가공품</li>
-            <li>신선</li>
-            <li>냉동</li>
-          </ul>
-          <div class="tab-contents">
-            <div id="setitems" class="d-flex justify-between">
-              <div class="setitem01">
-                <img src="images/set1.jpg" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="setitem01">
-                <img src="images/set2.jpg" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="setitem01">
-                <img src="images/set3.jpg" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="setitem01">
-                <img src="images/set4.jpg" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
+        <div class="m_width">
+          <div class="m_sliders_wrap d-flex">
+            <div class="m_slider ms1">
+              <img src="images/carousel1.jpg" alt="캐러셀1" />
             </div>
-            <div id="meet" class="d-none d-flex justify-between">
-              <div class="setitem01">
-                <img src="images/meet1.jpg" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="setitem01">
-                <img src="images/meet2.jpg" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="setitem01">
-                <img src="images/meet3.jpg" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="setitem01">
-                <img src="images/meet4.jpg" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div class="m_slider ms2">
+              <img src="images/carousel2.jpg" alt="캐러셀2" />
             </div>
-            <div id="fresh" class="d-none d-flex justify-between">
-              <div class="setitem01">
-                <img src="images/fresh1.png" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="setitem01">
-                <img src="images/fresh2.png" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="setitem01">
-                <img src="images/fresh3.png" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="setitem01">
-                <img src="images/fresh4.png" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div class="m_slider ms3">
+              <img src="images/carousel3.jpg" alt="캐러셀3" />
             </div>
-            <div id="cool" class="d-none d-flex justify-between">
-              <div class="setitem01">
-                <img src="images/cool1.png" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="setitem01">
-                <img src="images/cool2.png" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="setitem01">
-                <img src="images/cool3.png" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="setitem01">
-                <img src="images/cool4.png" alt="세트 상품1" />
-                <div class="setitem_text">
-                  <div>
-                    <p class="font-125">한우 1등급 특수부위 4종 셋트</p>
-                    <div class="d-flex">
-                      <p>32%</p>
-                      <p>135,000원</p>
-                      <p class="center-line gray">180,000원</p>
-                    </div>
-                    <p>
-                      한우 1등급 (부채살) 200g x 1팩, (치마살)200g x 1팩,
-                      (업진살)400g_200g 2팩, 살치살 400g_200g 2팩
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div class="m_slider ms4">
+              <img src="images/carousel1.jpg" alt="캐러셀3" />
+            </div>
+            <div class="m_slider ms5">
+              <img src="images/carousel2.jpg" alt="캐러셀3" />
+            </div>
+            <div class="m_slider ms6">
+              <img src="images/carousel3.jpg" alt="캐러셀3" />
             </div>
           </div>
         </div>
       </div>
-      <div class="my-8">
-        <div class="app_banner bg-g">
-          <div class="container margin-auto pos-r">
-            <div class="app_text">
-              <h3>
-                집에서 간편하게 <strong>원터치</strong>로<br />주문해보세요.
-              </h3>
-              <button>앱으로 주문하기</button>
-            </div>
-            <div class="box_radius">
-              <img src="images/app_banner.png" alt="앱 베너 이미지" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="my-4">
-        <div class="main_title container margin-auto">
-          <h1 class="my-3">커뮤니티</h1>
-        </div>
-        <div class="container margin-auto d-flex justify-between">
-          <div class="community_continer">
-            <div class="community_title d-flex justify-between">
-              <h2 class="on sec">공지사항</h2>
-              <h2>이벤트</h2>
-              <h2>문의사항</h2>
-              <h2>가맹절차</h2>
-            </div>
-            <div class="community_contents">
-              <ul class="news">
-                <li class="d-flex justify-between">
-                  <p>산포 나주 산포 농형로컬프드 직매장 오픈</p>
-                  <p>2023-10-25</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>나주 로컬 푸드 미래 전략 토론회</p>
-                  <p>2023-10-20</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>나주 로컬푸드 임직원 농촌일손돕기</p>
-                  <p>2023-10-17</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>2023년 생산자 선전지 견학 일정</p>
-                  <p>2023-10-12</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>2023년 산포로컬푸드센터 제1차 생산자 보수교육 안내</p>
-                  <p>2023-10-07</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>나주빛가람동 로컬푸드 2023년 제 9기 신규농가교육</p>
-                  <p>2023-09-27</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>
-                    재단법인 나주빛가람로컬푸드센터 직원(정산원) 채용 최종합격자
-                    공고
-                  </p>
-                  <p>2023-09-20</p>
-                </li>
-              </ul>
-
-              <ul class="event d-none">
-                <li class="d-flex justify-between">
-                  <p>직매장 개장 6주년 기념행사</p>
-                  <p>2023-10-24</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>나주로컬푸드 버섯 농가와 함께 하는 소비자 체험 행사</p>
-                  <p>2023-10-12</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>농협 흑마늘 훈제오리 NS홈쇼핑서 판매</p>
-                  <p>2023-10-07</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>
-                    농협 '주부9단 프랑크소시지', 한글날 맞이 한정 특별판 출시
-                  </p>
-                  <p>2023-10-06</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>[9월] 제철은 향긋하구나! (인삼, 무화과)</p>
-                  <p>2023-09-20</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>농협, 신제품 '버터구이 치킨' 2종 출시</p>
-                  <p>2023-09-12</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>농협 , 추석 선물세트 사전예약 ...최대 45% 할인</p>
-                  <p>2023-08-23</p>
-                </li>
-              </ul>
-
-              <ul class="qna d-none">
-                <li class="d-flex justify-between">
-                  <p>생산지는 나주가 맞나요?</p>
-                  <p>2023-10-20</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>배송기간은 얼마나 걸리나요?</p>
-                  <p>2023-10-18</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>매장에 재고확인은 어떻게 확인하나요?</p>
-                  <p>2023-10-16</p>
-                </li>
-
-                <li class="d-flex justify-between">
-                  <p>좋은 고기 고르는 법</p>
-                  <p>2023-10-14</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>동물성 단백질 얼마나 섭취해야 하나</p>
-                  <p>2023-10-12</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>연령별 균형 잡힌 육류 섭취</p>
-                  <p>2023-10-10</p>
-                </li>
-                <li class="d-flex justify-between">
-                  <p>고기에 대한 잘못된 상식들</p>
-                  <p>2023-10-08</p>
-                </li>
-              </ul>
-              <ul class="gamaeng d-none text-center">
-                <li>
-                  <img src="images/가맹절차.png" alt="가맹절차" />
-                </li>
-                <li><button>가입 문의</button></li>
-              </ul>
-            </div>
-          </div>
-          <div class="new">
-            <h2>새소식</h2>
-            <div class="new_contents">
-              <div class="sliderWrap">
-                <div class="slider s1">
-                  <img
-                    src="images/news1.jpg"
-                    alt="나주 산포 농형로컬프드 직매장"
-                  />
-                  <p>산포 나주 산포 농형로컬프드 직매장 오픈</p>
-                </div>
-                <div class="slider s2">
-                  <img
-                    src="images/news2.jpg"
-                    alt="나주 로컬 푸드 미래 전략 토론회"
-                  />
-                  <p>나주 로컬 푸드 미래 전략 토론회</p>
-                </div>
-                <div class="slider s3">
-                  <img
-                    src="images/news3.jpg"
-                    alt="나주 로컬푸드 임직원 농촌일손돕기"
-                  />
-                  <p>나주 로컬푸드 임직원 농촌일손돕기</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <article>
-      <div class="container margin-auto">
-        <h2>브랜드</h2>
-        <ul class="cooperation d-flex justify-between">
-          <li>
-            <img src="images/brand_logo01.png" alt="주부9단" />
-          </li>
-          <li>
-            <img src="images/brand_logo02.png" alt="프라임" />
-          </li>
-          <li>
-            <img src="images/brand_logo03.png" alt="알뜨레" />
-          </li>
-          <li>
-            <img src="images/brand_logo04.png" alt="천년풍미" />
-          </li>
-        </ul>
-      </div>
-    </article>
-    <footer>
-      <div class="bg-b">
-        <div class="container margin-auto py-2">
-          <div class="footer_logo">
-            <img src="images/logo_footer.png" alt="footer logo" />
-          </div>
-          <div class="footer_top">
-            <div class="d-flex justify-between align-center">
-              <ul class="d-flex">
-                <li>회사소개</li>
-                <li>이용약관</li>
-                <li>개인정보취급방침</li>
-                <li>사이트맵</li>
-                <li><button>사업자정보확인</button></li>
-              </ul>
-              <div class="family_site">
-                <select name="family" id="family_box" title="family">
-                  <option value="family-site">FAMILY-SITE</option>
-                  <option value="jubu9dan">주부9단</option>
-                  <option value="reome">프라임</option>
-                  <option value="alddre">알뜨레</option>
-                  <option value="chunnyunfungmy">천년풍미</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <p class="copyright">
-            Copyright&copy; 2023 Style Sanda All Rights Reseved.
-          </p>
-        </div>
-      </div>
-    </footer>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
