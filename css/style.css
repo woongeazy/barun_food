@@ -780,7 +780,8 @@ article h2 {
     z-index: 10;
   }
   .m_menu_header {
-    margin: 2rem 1rem;
+    margin: 0 1rem;
+    height: 90.5px;
   }
   .m_search {
     border-radius: 100px;
