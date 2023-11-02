@@ -108,10 +108,11 @@ $(function () {
   // });
   let tabBtn = $(".community_title > h2"); //버튼 설정
   let tabCont = $(".community_contents > ul"); //콘텐츠 설정
-  tabCont.hide().eq(0).show(); //첫번째 콘텐츠만 보이게 설정
+  tabCont.hide().eq(0).show(); //콘텐츠를 숨긴다. 첫번째껀. 보인다.
 
   tabBtn.on("click", function () {
     const index = $(this).index(); //클릭한 번호를 저장
+    console.log("클릭한 번호 : "+index);
 
     $(this).addClass("on sec").siblings().removeClass("on sec"); //내가 클릭한 버튼에 클래스를 추가하고 나머지 클래스에선 제거
     tabCont.eq(index).show().siblings().hide(); //내가 클릭한 버튼의 콘텐츠는 보여주고 나머지는 숨김
@@ -212,7 +213,7 @@ $(function () {
   //   }
   // },3000)
 
-  $(".fa-bars").on("click", function () {
+  $(".icons").on("click", function () {
     $(".m_menu_bg").css("right", "0vw");
   });
   $(".fa-xmark").on("click", function () {

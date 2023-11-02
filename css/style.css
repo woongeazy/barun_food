@@ -828,7 +828,23 @@ article h2 {
     white-space: nowrap;
     text-align: center;
   }
-  .setitem01 {
+  .tab-contents {
     width: 100vw;
+    overflow-y: hidden;
+  }
+  .m_item {
+    width: 100%;
+  }
+  .m_item img {
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+    border-radius: 20px;
+  }
+  /* .m_item_text {
+    font-size: ;
+  } */
+  .m_item_text p:nth-last-child(1) {
+    display: none;
   }
 }
