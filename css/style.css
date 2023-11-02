@@ -847,4 +847,47 @@ article h2 {
   .m_item_text p:nth-last-child(1) {
     display: none;
   }
+
+  .mb_tab {
+    max-width: 353px;
+    justify-content: center;
+  }
+  .community_continer {
+    height: 300px;
+  }
+  .community_title {
+    justify-content: flex-start;
+
+  }
+  .community_title > h2 {
+    white-space: nowrap;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+  .news_container {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .community_contents  {
+    width: 353px;
+    height: auto;
+  }
+  .new {
+    width: 353px;
+    height: auto;
+    text-align: center;
+  }
+  .sliderWrap .slider {
+    width: 353px;
+    height: 200px;
+  }
+  .sliderWrap .slider img {
+    width: 353px;
+  }
+  .sliderWrap .slider p {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
 }
