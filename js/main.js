@@ -109,19 +109,31 @@ $(function () {
   let tabBtn = $(".community_title > h2"); //버튼 설정
   let tabCont = $(".community_contents > ul"); //콘텐츠 설정
   tabCont.hide().eq(0).show(); //콘텐츠를 숨긴다. 첫번째껀. 보인다.
+  
+  tabBtn.on("click", function () {
+    const index = $(this).index(); //클릭한 번호를 저장
+    // console.log("클릭한 번호 : "+index);
+
+    $(this).addClass("on sec").siblings().removeClass("on sec"); //내가 클릭한 버튼에 클래스를 추가하고 나머지 클래스에선 제거
+    tabCont.eq(index).show().siblings().hide(); //내가 클릭한 버튼의 콘텐츠는 보여주고 나머지는 숨김
+  });
+
+  // tab 버튼은 작동을 하는데 컨텐츠 hidden이 작동이상을 일으켜 모바일 버젼을 새로 만듬
+
+  let mtabCont = $(".m_community_contents > ul"); //콘텐츠 설정
+  mtabCont.hide().eq(0).show(); //콘텐츠를 숨긴다. 첫번째껀. 보인다.
 
   tabBtn.on("click", function () {
     const index = $(this).index(); //클릭한 번호를 저장
     console.log("클릭한 번호 : "+index);
 
     $(this).addClass("on sec").siblings().removeClass("on sec"); //내가 클릭한 버튼에 클래스를 추가하고 나머지 클래스에선 제거
-    tabCont.eq(index).show().siblings().hide(); //내가 클릭한 버튼의 콘텐츠는 보여주고 나머지는 숨김
+    mtabCont.eq(index).show().siblings().hide(); //내가 클릭한 버튼의 콘텐츠는 보여주고 나머지는 숨김
   });
 
   $(".community_title h2").on("mouseover", function () {
     $(this).find("h2").css("backguround", "#333333");
   });
-
   $(".setitem01").on("mouseenter", function () {
     $(this).find(".setitem_text").addClass("on");
   });
@@ -151,6 +163,17 @@ $(function () {
     // console.log("nextIndex :" + nextIndex);
   }, 3000);
 
+  let m_currentIndex = 0; //현재 이미지 번호 부여
+  setInterval(function () {
+    let nextIndex = (m_currentIndex + 1) % 3;
+    $(".mb_slider").eq(m_currentIndex).fadeOut();
+    $(".mb_slider").eq(nextIndex).fadeIn();
+    m_currentIndex = nextIndex;
+
+    // console.log("currentIndex :" + currentIndex);
+    // console.log("nextIndex :" + nextIndex);
+  }, 3000);
+  
   //화살표 애니메이션
   // $(".arrows").on("mouseover", function(){
   //   $(".left_arr").css("background", "rgba(255, 255, 255, 0.5)");
@@ -179,6 +202,7 @@ $(function () {
   $(".jubu_info > p").on("click", function () {
     $(".jubu_infos").stop().slideUp(300);
   });
+
 
   let mcurrentIndex = 0;
   // $(".m_sliders_wrap").append($(".m_slider").first().clone(true));   //m_sliders_wrap의 마지막에 m_slider의 첫번째 div를 복제해라

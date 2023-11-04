@@ -785,6 +785,7 @@ article h2 {
   }
   .m_search {
     border-radius: 100px;
+    border: none;
     margin: 0 0.5rem;
     padding: 0.5rem 0;
     text-align: center;
@@ -852,12 +853,14 @@ article h2 {
     max-width: 353px;
     justify-content: center;
   }
-  .community_continer {
+  .m_community_continer {
     height: 300px;
+    border: 1px solid var(--lightfont-color);
+    border-radius: 20px;
+
   }
   .community_title {
     justify-content: flex-start;
-
   }
   .community_title > h2 {
     white-space: nowrap;
@@ -870,24 +873,87 @@ article h2 {
   .container {
     flex-direction: column;
   }
-  .community_contents  {
+  .m_community_contents {
     width: 353px;
     height: auto;
+    font-size: .7rem;
+  }
+  .m_community_contents ul {
+    margin: 1.5rem;
+  }
+  .m_community_continer ul li p:nth-child(1) {
+    width: 252px;
+  }
+  .m_community_continer p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 2.5 
+  }
+  .gamaeng img {
+    width: 280px;
+  }
+  .gamaeng button {
+    font-size: 1rem;
   }
   .new {
     width: 353px;
     height: auto;
     text-align: center;
   }
-  .sliderWrap .slider {
+  .sliderWrap .mb_slider {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
     width: 353px;
     height: 200px;
   }
-  .sliderWrap .slider img {
+  .sliderWrap .mb_slider img {
     width: 353px;
+    vertical-align: top;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
-  .sliderWrap .slider p {
+  .sliderWrap .mb_slider p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--font-color);
+    transform: translate(-50%, 0);
     font-size: 1rem;
+    padding: 1rem 0;
+  }
+  .m_bg-b {
+    background: var(--lightfont-color);
+    margin: 15rem 0 0 0;
+  }
+  .footer_logo {
+    margin: 1rem 0;
+  }
+  .footer_logo > img {
+    width: 100px;
+  }
+  .footer_top {
+    font-size: .5rem;
+  }
+  .footer_top li {
+    border-right: 1px solid var(--subfont-color);
+    padding: .2rem .5rem;
+    margin: 0;
+  }
+  .footer_top button {
+    font-size: .5rem;
+  }
+  #family_box {
+    width: 100%;
+    padding: .5rem 0;
+  }
+  .copyright {
     padding: 1rem 0;
   }
 }
