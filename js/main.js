@@ -81,6 +81,24 @@ $(function () {
     $(".jubu_infos").stop().slideUp(300);
   });
 
+
+  let mmtabBtn = $('.tab-title > li')
+  let mmtabCont = $('.tab-contents > .m_items')
+
+  mmtabBtn.on("click", function(){
+    const mindex = $(this).index();
+    let mmindex = mindex + 1;
+    $(".tab-title").find(" > li:nth-child("+mmindex+")").css("background", "var(--fourd-color)").siblings().css("background", "var(--primary-color)");
+    mmtabCont.eq(mindex).removeClass('d-none').siblings().addClass('d-none');
+  });
+
+  $(".tab_btns button:nth-child(2)").on("click", function(){
+    $(".m_items").css("right", "18%");
+  });
+  $(".tab_btns button:nth-child(1)").on("click", function(){
+    $(".m_items").css("right", "none");
+  });
+
   // $(".community_title > h2:nth-child(1)").on("click", function () {
   //   $(".news").removeClass("d-none");
   //   $(".event").addClass("d-none");
@@ -132,7 +150,7 @@ $(function () {
   });
 
   $(".community_title h2").on("mouseover", function () {
-    $(this).find("h2").css("backguround", "#333333");
+    $(this).find("h2").css("background", "#333333");
   });
   $(".setitem01").on("mouseenter", function () {
     $(this).find(".setitem_text").addClass("on");

@@ -778,7 +778,7 @@ article h2 {
   }
   .m_menu {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; ====================================*/
     width: 100vw;
   }
   .m_menu_bg {
@@ -827,6 +827,9 @@ article h2 {
     padding: 0.5rem 0 0.5rem 3rem;
   }
   /*========================= main tap */
+  .tap {
+    height: 220px;
+  }
   .tab-title {
     margin: 2rem 0;
   }
@@ -843,13 +846,52 @@ article h2 {
   }
   .tab-contents {
     width: 100vw;
+    position: relative;
+    left: 0%;
+    padding: 1rem 0;
+    /* background: var(--primary-color); */
+    /* color: var(--font-color); */
     /* overflow-y: hidden; */
   }
+  .m_item_text {
+    font-size: .8rem;
+  }
+  .m_item_text .d-flex p:nth-child(1) {
+    color: #ee2626;
+  }
+  .tab_btns {
+    position: absolute;
+    display: flex;
+    top: 250%;
+    transform: translate(0%, -50%);
+    z-index: 100;
+  }
+  .tab_btns img {
+    width: 20px;
+    height: 60px;
+  }
+  .tab_btns button {
+    background: none;
+    border: none;
+  }
+  .tab_btns button:nth-child(2) {
+    position: absolute;
+    left: 100vw;
+    transform: translate(-100%, 0);
+  }
+  .tab-contents div {
+    gap: 0;
+  }
+  .m_items {
+    position: absolute;
+  }
   .m_item {
-    width: 100%;
+    margin: 0 0 0 80px;
+    width: 90px;
   }
   .m_item img {
-    width: 100%;
+    width: 90px;
+    margin: 0 0 .8rem 0;
     height: auto;
     /* object-fit: cover; */
     border-radius: 20px;
@@ -869,7 +911,6 @@ article h2 {
     height: 300px;
     border: 1px solid var(--lightfont-color);
     border-radius: 20px;
-
   }
   .community_title {
     justify-content: flex-start;
@@ -888,7 +929,7 @@ article h2 {
   .m_community_contents {
     width: 353px;
     height: auto;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
   .m_community_contents ul {
     margin: 1.5rem;
@@ -900,7 +941,7 @@ article h2 {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    line-height: 2.5 
+    line-height: 2.5;
   }
   .gamaeng img {
     width: 280px;
@@ -951,19 +992,19 @@ article h2 {
     width: 100px;
   }
   .footer_top {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
   .footer_top li {
     border-right: 1px solid var(--subfont-color);
-    padding: .2rem .5rem;
+    padding: 0.2rem 0.5rem;
     margin: 0;
   }
   .footer_top button {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
   #family_box {
     width: 100%;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
   .copyright {
     padding: 1rem 0;
@@ -1049,13 +1090,13 @@ article h2 {
   }
   .jubu-text button {
     font-size: 1rem;
-    margin: .5rem 1rem;
+    margin: 0.5rem 1rem;
     white-space: nowrap;
   }
   .jubu-text p {
     margin: 0;
     line-height: 1;
-    font-size: .8rem;
+    font-size: 0.8rem;
     width: auto;
     padding: 1rem 1rem 1rem 0;
     line-height: 1.2;
@@ -1073,7 +1114,7 @@ article h2 {
     font-size: 1rem;
   }
   .popup_text p {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .popup_text button {
     font-size: 1rem;
