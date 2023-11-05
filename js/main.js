@@ -198,6 +198,7 @@ $(function () {
 
   $(".jubu-text button").on("click", function () {
     $(".jubu_infos").stop().slideDown(300);
+    $('footer').removeClass("mt-12")
   });
   $(".jubu_info > p").on("click", function () {
     $(".jubu_infos").stop().slideUp(300);
