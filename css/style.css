@@ -1006,6 +1006,10 @@ article h2 {
     width: 100%;
     padding: 0.5rem 0;
   }
+  #m_family_box {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
   .copyright {
     padding: 1rem 0;
   }
