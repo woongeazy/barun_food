@@ -1,6 +1,6 @@
 $(function () {
 
-  console.log(screen.availWidth); //스크린 객채 / 가로폭
+  // console.log(screen.availWidth); //스크린 객채 / 가로폭
   
   $("#hero").slick({
     slidesToShow: 3,
@@ -125,7 +125,7 @@ $(function () {
 
   tabBtn.on("click", function () {
     const index = $(this).index(); //클릭한 번호를 저장
-    console.log("클릭한 번호 : "+index);
+    // console.log("클릭한 번호 : "+index);
 
     $(this).addClass("on sec").siblings().removeClass("on sec"); //내가 클릭한 버튼에 클래스를 추가하고 나머지 클래스에선 제거
     mtabCont.eq(index).show().siblings().hide(); //내가 클릭한 버튼의 콘텐츠는 보여주고 나머지는 숨김
