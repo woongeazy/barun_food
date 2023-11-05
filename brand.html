@@ -38,130 +38,195 @@
       type="text/css"
       href="js/slick-1.8.1/slick/slick-theme.css"
     />
-    <script
-      src="http://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      src="js/slick-1.8.1/slick/slick.min.js"
-    ></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
     <!-- slick -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    
-      <header>
-        <div class="d-flex container margin-auto align-center justify-between">
-          <ul class="sns_icon d-flex">
+    <div class="m">
+      <div class="m_menu_bg">
+        <div class="m_menu_header d-flex align-center">
+          <input type="submit" class="m_search_btn" value="&#xf002;" />
+          <input
+            type="text"
+            class="m_search"
+            placeholder="검색어를 입력해 주세요"
+          />
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul id="m_gnb">
+          <li>
+            <a href="#" class="d-flex justify-between"
+              >회사소개 <img src="images/low_arr.png" alt="아레 화살표"
+            /></a>
+            <ul class="m_lnb">
+              <li><a href="#">바른푸드 소개</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">찾아오시는 길</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-between"
+              >제품 <img src="images/low_arr.png" alt="아레 화살표"
+            /></a>
+            <ul class="m_lnb">
+              <li><a href="#">세트</a></li>
+              <li><a href="#">육가공품</a></li>
+              <li><a href="#">신선</a></li>
+              <li><a href="#">냉동</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-between"
+              >브랜드 <img src="images/low_arr.png" alt="아레 화살표"
+            /></a>
+            <ul class="m_lnb">
+              <li><a href="brand.html">주부9단</a></li>
+              <li><a href="#">프라임</a></li>
+              <li><a href="#">알뜨레</a></li>
+              <li><a href="#">처년풍미</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-between"
+              >공지사항 <img src="images/low_arr.png" alt="아레 화살표"
+            /></a>
+            <ul class="m_lnb">
+              <li><a href="#">공고 및 공지사항</a></li>
+              <li><a href="#">법령자료</a></li>
+              <li><a href="#">인증관련 일정표</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="d-flex justify-between"
+              >고객센터 <img src="images/low_arr.png" alt="아레 화살표"
+            /></a>
+            <ul class="m_lnb">
+              <li><a href="#">Q&A</a></li>
+              <li><a href="#">자주묻는 질문</a></li>
+              <li><a href="#">리뷰</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex justify-between align-center headers">
+        <div class="m_logo"><a href="index.html"><img src="images/logo.png" alt="logo" /></a></div>
+        <div class="icons">
+          <i class="fa-solid fa-magnifying-glass top-select"></i>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="d-flex container margin-auto align-center justify-between">
+        <ul class="sns_icon d-flex">
+          <li>
+            <a href="https://www.youtube.com/"
+              ><img src="images/sns_ytb.png" alt="유튜브"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><img src="images/sns_insta.png" alt="인스타그램"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><img src="images/sns_fb.png" alt="페이스북"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.naver.com/"
+              ><img src="images/sns_blog.png" alt="블로그"
+            /></a>
+          </li>
+        </ul>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+        <div class="login d-flex align-center">
+          <ul class="d-flex">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+          </ul>
+          <i class="fa-solid fa-magnifying-glass top-select"></i>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="bg-main">
+        <div class="bg-main2"></div>
+        <div class="container margin-auto">
+          <ul id="gnb" class="d-flex">
             <li>
-              <a href="https://www.youtube.com/"
-                ><img src="images/sns_ytb.png" alt="유튜브"
-              /></a>
+              <a href="#">회사소개</a>
+              <ul class="sub">
+                <li><a href="#">바른푸드 소개</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+              </ul>
             </li>
             <li>
-              <a href="https://www.instagram.com/"
-                ><img src="images/sns_insta.png" alt="인스타그램"
-              /></a>
+              <a href="#">제품</a>
+              <ul class="sub">
+                <li><a href="#">세트</a></li>
+                <li><a href="#">육가공품</a></li>
+                <li><a href="#">신선</a></li>
+                <li><a href="#">냉동</a></li>
+              </ul>
             </li>
             <li>
-              <a href="https://www.facebook.com/"
-                ><img src="images/sns_fb.png" alt="페이스북"
-              /></a>
+              <a href="brand.html">브랜드</a>
+              <ul class="sub">
+                <li><a href="#">주부 9단</a></li>
+                <li><a href="#">프라임</a></li>
+                <li><a href="#">알뜨레</a></li>
+                <li><a href="#">천년풍미</a></li>
+              </ul>
             </li>
             <li>
-              <a href="https://www.naver.com/"
-                ><img src="images/sns_blog.png" alt="블로그"
-              /></a>
+              <a href="#">공지사항</a>
+              <ul class="sub">
+                <li><a href="#">공고 및 공지사상</a></li>
+                <li><a href="#">법령자료</a></li>
+                <li><a href="#">인증관련 일정표</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">고객센터</a>
+              <ul class="sub">
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">자주묻는 질문</a></li>
+                <li><a href="#">리뷰</a></li>
+              </ul>
             </li>
           </ul>
-          <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
-          </div>
-          <div class="login d-flex align-center">
-            <ul class="d-flex">
-              <li><a href="#">로그인</a></li>
-              <li><a href="#">회원가입</a></li>
-            </ul>
-            <i class="fa-solid fa-magnifying-glass top-select"></i>
-          </div>
         </div>
-      </header>
-      <nav>
-        <div class="bg-main">
-          <div class="bg-main2"></div>
-          <div class="container margin-auto">
-            <ul id="gnb" class="d-flex">
-              <li>
-                <a href="#">회사소개</a>
-                <ul class="sub">
-                  <li><a href="#">바른푸드 소개</a></li>
-                  <li><a href="#">연혁</a></li>
-                  <li><a href="#">찾아오시는 길</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">제품</a>
-                <ul class="sub">
-                  <li><a href="#">세트</a></li>
-                  <li><a href="#">육가공품</a></li>
-                  <li><a href="#">신선</a></li>
-                  <li><a href="#">냉동</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="brand.html">브랜드</a>
-                <ul class="sub">
-                  <li><a href="#">주부 9단</a></li>
-                  <li><a href="#">프라임</a></li>
-                  <li><a href="#">알뜨레</a></li>
-                  <li><a href="#">천년풍미</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">공지사항</a>
-                <ul class="sub">
-                  <li><a href="#">공고 및 공지사상</a></li>
-                  <li><a href="#">법령자료</a></li>
-                  <li><a href="#">인증관련 일정표</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">고객센터</a>
-                <ul class="sub">
-                  <li><a href="#">Q&A</a></li>
-                  <li><a href="#">자주묻는 질문</a></li>
-                  <li><a href="#">리뷰</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <form>
-            <fieldset>
-              <!-- <legend></legend> -->
-              <input
-                type="text"
-                class="select_window"
-                placeholder="검색어를 입력하고 Enter 또는 검색 아이콘을 클릭 해주세요."
-              />
-              <!-- submit -->
-              <input type="submit" class="m_search_btn" value="&#xf002;">
-            </fieldset>
-          </form>
-        </div>
-      </nav>
+        <form>
+          <fieldset>
+            <!-- <legend></legend> -->
+            <input
+              type="text"
+              class="select_window"
+              placeholder="검색어를 입력하고 Enter 또는 검색 아이콘을 클릭 해주세요."
+            />
+            <!-- submit -->
+            <input type="submit" class="m_search_btn" value="&#xf002;" />
+          </fieldset>
+        </form>
+      </div>
+    </nav>
     <main>
       <div class="brand-bg">
         <div class="container margin-auto">
-          <div class="pos-r">
-            <h1>
-              <strong>나주 지역</strong>의<br />신선하고 안전한 먹거리를<br /><strong
-                >함깨</strong
-              >
-              책임집니다!
-            </h1>
-          </div>
+          <h1>
+            <strong>나주 지역</strong>의<br />신선하고 안전한 먹거리를<br /><strong
+              >함깨</strong
+            >
+            책임집니다!
+          </h1>
         </div>
       </div>
     </main>
@@ -239,7 +304,121 @@
             <div class="d-flex gap-3">
               <div>
                 <h3>위치</h3>
-                <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:640px; height:392px; color:#333; position:relative"><div style="height: 360px;"><a href="https://map.kakao.com/?urlX=452161.0&amp;urlY=423834.0&amp;itemId=22297997&amp;q=%EB%B9%9B%EA%B0%80%EB%9E%8C%EB%8F%99%ED%96%89%EC%A0%95%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0&amp;srcid=22297997&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank"><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/edf7d2ba576f875b06c6baf4fa65e5ebcc7a669936922083f694c91340bde172" width="638px" height="358px" style="border:1px solid #ccc;"></a></div><div style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);"><a href="https://map.kakao.com" target="_blank" style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:block;width:72px;height:16px"></a><div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=22297997&amp;confirmid=22297997&amp;q=%EB%B9%9B%EA%B0%80%EB%9E%8C%EB%8F%99%ED%96%89%EC%A0%95%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%B9%9B%EA%B0%80%EB%9E%8C%EB%8F%99%ED%96%89%EC%A0%95%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0&amp;eX=452161.0&amp;eY=423834.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=22297997&amp;itemId=22297997&amp;q=%EB%B9%9B%EA%B0%80%EB%9E%8C%EB%8F%99%ED%96%89%EC%A0%95%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0&amp;urlX=452161.0&amp;urlY=423834.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a></div></div></div>
+                <div
+                  style="
+                    font: normal normal 400 12px / normal dotum, sans-serif;
+                    width: 640px;
+                    height: 392px;
+                    color: #333;
+                    position: relative;
+                  "
+                >
+                  <div style="height: 360px">
+                    <a
+                      href="https://map.kakao.com/?urlX=452161.0&amp;urlY=423834.0&amp;itemId=22297997&amp;q=%EB%B9%9B%EA%B0%80%EB%9E%8C%EB%8F%99%ED%96%89%EC%A0%95%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0&amp;srcid=22297997&amp;map_type=TYPE_MAP&amp;from=roughmap"
+                      target="_blank"
+                      ><img
+                        class="map"
+                        src="http://t1.daumcdn.net/roughmap/imgmap/edf7d2ba576f875b06c6baf4fa65e5ebcc7a669936922083f694c91340bde172"
+                        width="638px"
+                        height="358px"
+                        style="border: 1px solid #ccc"
+                    /></a>
+                  </div>
+                  <div
+                    style="
+                      overflow: hidden;
+                      padding: 7px 11px;
+                      border: 1px solid rgba(0, 0, 0, 0.1);
+                      border-radius: 0px 0px 2px 2px;
+                      background-color: rgb(249, 249, 249);
+                    "
+                  >
+                    <a
+                      href="https://map.kakao.com"
+                      target="_blank"
+                      style="float: left"
+                      ><img
+                        src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png"
+                        width="72"
+                        height="16"
+                        alt="카카오맵"
+                        style="display: block; width: 72px; height: 16px"
+                    /></a>
+                    <div
+                      style="
+                        float: right;
+                        position: relative;
+                        top: 1px;
+                        font-size: 11px;
+                      "
+                    >
+                      <a
+                        target="_blank"
+                        href="https://map.kakao.com/?from=roughmap&amp;srcid=22297997&amp;confirmid=22297997&amp;q=%EB%B9%9B%EA%B0%80%EB%9E%8C%EB%8F%99%ED%96%89%EC%A0%95%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0&amp;rv=on"
+                        style="
+                          float: left;
+                          height: 15px;
+                          padding-top: 1px;
+                          line-height: 15px;
+                          color: #000;
+                          text-decoration: none;
+                        "
+                        >로드뷰</a
+                      ><span
+                        style="
+                          width: 1px;
+                          padding: 0;
+                          margin: 0 8px 0 9px;
+                          height: 11px;
+                          vertical-align: top;
+                          position: relative;
+                          top: 2px;
+                          border-left: 1px solid #d0d0d0;
+                          float: left;
+                        "
+                      ></span
+                      ><a
+                        target="_blank"
+                        href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%B9%9B%EA%B0%80%EB%9E%8C%EB%8F%99%ED%96%89%EC%A0%95%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0&amp;eX=452161.0&amp;eY=423834.0"
+                        style="
+                          float: left;
+                          height: 15px;
+                          padding-top: 1px;
+                          line-height: 15px;
+                          color: #000;
+                          text-decoration: none;
+                        "
+                        >길찾기</a
+                      ><span
+                        style="
+                          width: 1px;
+                          padding: 0;
+                          margin: 0 8px 0 9px;
+                          height: 11px;
+                          vertical-align: top;
+                          position: relative;
+                          top: 2px;
+                          border-left: 1px solid #d0d0d0;
+                          float: left;
+                        "
+                      ></span
+                      ><a
+                        target="_blank"
+                        href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=22297997&amp;itemId=22297997&amp;q=%EB%B9%9B%EA%B0%80%EB%9E%8C%EB%8F%99%ED%96%89%EC%A0%95%EB%B3%B5%EC%A7%80%EC%84%BC%ED%84%B0&amp;urlX=452161.0&amp;urlY=423834.0"
+                        style="
+                          float: left;
+                          height: 15px;
+                          padding-top: 1px;
+                          line-height: 15px;
+                          color: #000;
+                          text-decoration: none;
+                        "
+                        >지도 크게 보기</a
+                      >
+                    </div>
+                  </div>
+                </div>
 
                 <!-- <div id="daumRoughmapContainer1698489863687" class="root_daum_roughmap root_daum_roughmap_landing"></div>
                 <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
@@ -251,7 +430,6 @@
                     "mapHeight" : "360"
                   }).render();
                 </script> -->
-
               </div>
               <div>
                 <h3>주부 9단</h3>

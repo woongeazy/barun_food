@@ -637,6 +637,7 @@ article h2 {
   height: 350px;
   background: url(../images/brand-bg.jpg) no-repeat center scroll;
   background-size: cover;
+  position: relative;
 }
 .brand-bg h1 {
   color: var(--font-color);
@@ -743,8 +744,13 @@ article h2 {
 .jubu_info button:hover {
   background: #4995ff;
 }
-
+.m {
+  display: none;
+}
 @media screen and (max-width: 412px) {
+  .m {
+    display: block;
+  }
   .web_main {
     display: none;
   }
@@ -870,7 +876,7 @@ article h2 {
   .news_container {
     width: 100%;
   }
-  .container {
+  .mb_tab {
     flex-direction: column;
   }
   .m_community_contents {
@@ -955,5 +961,56 @@ article h2 {
   }
   .copyright {
     padding: 1rem 0;
+  }
+
+  /* =========================================================brand */
+  .sns_icon {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .m_logo img {
+    width: 100px;
+  }
+  .login {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .brand-bg h1 {
+    font-size: 1.5rem;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  strong {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .brands ul {
+    justify-content: center;
+  }
+  .brands li {
+    width: 100px;
+    height: 100px;
+  }
+  .brands li:nth-child(1) {
+    margin: 0;
+  }
+  .brands li:nth-child(4) {
+    margin: 0;
+  }
+  .brands ul {
+    flex-direction: column;
+  }
+  .brands li img {
+    width: 100px;
+    height: 100px;
   }
 }
