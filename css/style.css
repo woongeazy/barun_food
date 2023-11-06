@@ -750,7 +750,13 @@ article h2 {
 .m_footer {
   display: none;
 }
+.m_kakao_map {
+  display: none;
+}
 @media screen and (max-width: 412px) {
+  .m_kakao_map {
+    display: block;
+  }
   .m {
     display: block;
     position: relative;
@@ -884,6 +890,7 @@ article h2 {
   }
   .m_items {
     position: absolute;
+    transition: all 300ms;
   }
   .m_item {
     margin: 0 0 0 80px;
@@ -1013,10 +1020,6 @@ article h2 {
   .copyright {
     padding: 1rem 0;
   }
-  .m_kakao_map {
-    display: none;
-  }
-
   /* =========================================================brand */
   .sns_icon {
     display: none;
@@ -1110,9 +1113,6 @@ article h2 {
   }
   .kakao_map {
     display: none;
-  }
-  .m_kakao_map {
-    display: block;
   }
   .popup_text h3 {
     font-size: 1rem;

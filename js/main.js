@@ -220,6 +220,7 @@ $(function () {
   });
   $(".jubu_info > p").on("click", function () {
     $(".jubu_infos").stop().slideUp(300);
+    $('footer').addClass("mt-12")
   });
 
 
