@@ -18,6 +18,9 @@ body {
   background: #fff;
 }
 /* 공용 */
+.ht {
+  height: 350px;
+}
 .m_search_btn {
   font-family: "Font Awesome 6 Free";
   background: none;
@@ -644,8 +647,9 @@ article h2 {
   font-size: 2.5rem;
   line-height: 1.2;
   position: absolute;
-  top: 90px;
-  left: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* section */
 .brands li {
@@ -821,8 +825,8 @@ article h2 {
     box-sizing: border-box;
   }
   .m_search_btn {
-    font-family: "Font Awesome 6 Free";
-    background: none;
+    /* font-family: "Font Awesome 6 Free"; */
+    background: #000;
     border: none;
     font-size: 1.5rem;
   }
