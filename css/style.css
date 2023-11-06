@@ -744,13 +744,19 @@ article h2 {
 .jubu_info button:hover {
   background: #4995ff;
 }
-.m {
+/* .m {
   display: none;
-}
+} */
 .m_footer {
   display: none;
 }
 .m_kakao_map {
+  display: none;
+}
+.headers {
+  display: none;
+}
+.m_menu_bg {
   display: none;
 }
 @media screen and (max-width: 412px) {
@@ -759,9 +765,11 @@ article h2 {
   }
   .m {
     display: block;
-    position: relative;
     overflow: hidden;
     width: 100vw;
+    position: relative;
+    height: 100%;
+    /* top: 0%; */
   }
   .web_main {
     display: none;
@@ -771,6 +779,8 @@ article h2 {
   }
   .headers {
     padding: 2rem 1rem;
+    display: inline-block;
+    display: flex;
   }
   .logo img {
     width: 100px;
@@ -788,6 +798,7 @@ article h2 {
     width: 100vw;
   }
   .m_menu_bg {
+    display: inline-block;
     position: absolute;
     top: 0;
     right: -70vw;
