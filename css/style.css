@@ -236,6 +236,7 @@ header {
   position: relative;
 }
 #gnb > li > a {
+  white-space: nowrap;
   display: inline-block;
   padding: 27px 96px;
 }
