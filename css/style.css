@@ -453,7 +453,7 @@ input[type="submit"] {
   transition: all 300ms;
 }
 .setitem_text > div > div {
-  margin: 0 0 12rem 0;
+  margin: 0 0 3rem 0;
 }
 .setitem01 .on {
   top: 0;
@@ -763,6 +763,12 @@ article h2 {
 }
 .m_menu_bg {
   display: none;
+}
+.setitem_text i {
+  font-size: 2rem;
+  margin: 3rem 0;
+  padding: .5rem;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 412px) {
   .m_kakao_map {
