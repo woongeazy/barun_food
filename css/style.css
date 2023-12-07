@@ -787,6 +787,8 @@ article h2 {
   }
   .mobile_web {
     display: block;
+    width: 100vw;
+    overflow: hidden;
   }
   .headers {
     padding: 2rem 1rem;
