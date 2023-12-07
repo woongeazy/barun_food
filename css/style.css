@@ -480,6 +480,7 @@ input[type="submit"] {
   color: #333;
   background: #cecece;
   position: relative;
+  width: 100%;
 }
 .community_title .sec {
   background: var(--font-color);
@@ -949,6 +950,7 @@ article h2 {
     white-space: nowrap;
     padding: 1rem 1rem;
     font-size: 1rem;
+  
   }
   .news_container {
     width: 100%;
